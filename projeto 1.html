@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberx</title>
+    <link rel="stylesheet" href="projeto 1.css">
+</head>
+<body>
+
+
+
+<div class="conteudo" id="login">
+<h2>Login</h2>
+<input type="text" placeholder="Usuário" />
+<input type="password" placeholder="Senha" />
+<button onclick="logar()">Entrar</button>
+<button onclick="entrarSemLogin()">Entrar sem login</button>
+<div class="link" onclick="mostrarCadastro()">Não tem conta? Cadastre-se</div>
+</div>
+
+
+
+<div class="conteudo" id="cadastro">
+<h2>Cadastro</h2>
+<input type="text" placeholder="Usuário" />
+<input type="email" placeholder="Email" required />
+<input type="password" placeholder="Senha" minlength="8"/>
+<button onclick="cadastrar()">Cadastrar</button>
+<div class="link" onclick="mostrarLogin()">Voltar para login</div>
+</div>
+
+
+
+<div class="conteudo" id="tipo">
+<h2>Você é:</h2>
+<button onclick="selecionar('Funcionário')">Funcionário</button>
+<button onclick="selecionar('Cliente')">Cliente</button>
+</div>
+
+
+<script type="text/javascript" src="projeto 1.js"></script>
+</body>
+</html>
