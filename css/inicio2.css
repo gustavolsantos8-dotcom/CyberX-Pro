@@ -75,8 +75,9 @@ section h2 {
     color: #555;
 }
 
-.card button {
+.card a {
     background-color: #00bcd4;
+    text-align: center;
     border: none;
     padding: 10px;
     width: 100%;
@@ -86,7 +87,7 @@ section h2 {
     cursor: pointer;
 }
 
-.card button:hover {
+.card a:hover {
     background-color: #0097a7;
 }
 

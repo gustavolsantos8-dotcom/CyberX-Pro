@@ -1,83 +1,99 @@
-const produto = document.getElementById("produto");
-const quantidade = document.getElementById("quantidade");
-const tamanho = document.getElementById("tamanho");
-const unitarioSpan = document.getElementById("unitario");
-const totalSpan = document.getElementById("total");
-const clienteP = document.getElementById("cliente");
+const produtosDiv = document.getElementById("Produtos");
+const tamanhosDiv = document.getElementById("Tamanhos");
+const coresDiv = document.getElementById("Cores");
+const quantidadeInput = document.getElementById("Quantidade");
+const totalSpan = document.getElementById("Total");
 
-// Dados do cliente
-const nome = localStorage.getItem("nome");
-const empresa = localStorage.getItem("empresa");
-clienteP.textContent = `${nome} - ${empresa}`;
+let produtoSelecionado = null;
+let tamanhoSelecionado = null;
+let corSelecionada = null;
 
-// Preços base
 const precos = {
     adesivos: 2,
-    blocos: 4,
-    camisas: 25,
+    blocos: 15,
+    camisas: 35,
     cartao: 1.5,
-    panfletos: 1,
-    pastas: 8,
-    logos: 200
+    logos: 150,
+    panfletos: 0.80,
+    pastas: 12
 };
 
-// Multiplicador por tamanho
-const tamanhos = {
-    pp: 0.9,
-    p: 1,
-    m: 1.1,
-    g: 1.2,
-    gg: 1.3,
-    xg: 1.4
+const produtos = ["Adesivos", "Blocos", "Camisas", "Cartao", "Logos", "Panfletos", "Pastas"];
+
+const tamanhosPorProduto = {
+    Adesivos: ["5x5", "10x10"],
+    Blocos: ["75g", "90g", "120g"],
+    Camisas: ["PP", "P", "M", "G", "GG"],
+    Cartao: ["9x5cm"],
+    Logos: ["Digital"],
+    Panfletos: ["A5", "A4", "A3"],
+    Pastas: ["A4"]
 };
 
-function calcular() {
-    if (!produto.value) {
-        unitarioSpan.textContent = "R$ 0,00";
+const cores = ["Preto", "Branco", "Azul", "Vermelho", "Verde"];
+
+function criarCard(nome, tipo, container) {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    card.innerHTML = `
+        <img src="imagens/${tipo}-${nome}.jpg" onerror="this.src='imagens/padrao.jpg'">
+        <p>${nome}</p>
+    `;
+
+    card.addEventListener("click", () => {
+        container.querySelectorAll(".card").forEach(c => c.classList.remove("selected"));
+        card.classList.add("selected");
+
+        if (tipo === "produto") {
+            produtoSelecionado = nome;
+            carregarTamanhos();
+        }
+
+        if (tipo === "tamanho") tamanhoSelecionado = nome;
+        if (tipo === "cor") corSelecionada = nome;
+
+        calcularTotal();
+    });
+
+    container.appendChild(card);
+}
+
+function carregarProdutos() {
+    produtos.forEach(prod => criarCard(prod, "produto", produtosDiv));
+}
+
+function carregarTamanhos() {
+    tamanhosDiv.innerHTML = "";
+    coresDiv.innerHTML = "";
+
+    tamanhoSelecionado = null;
+    corSelecionada = null;
+
+    if (!produtoSelecionado) return;
+
+    tamanhosPorProduto[produtoSelecionado].forEach(t =>
+        criarCard(t, "tamanho", tamanhosDiv)
+    );
+
+    cores.forEach(c =>
+        criarCard(c, "cor", coresDiv)
+    );
+}
+
+function calcularTotal() {
+    if (!produtoSelecionado) {
         totalSpan.textContent = "R$ 0,00";
         return;
     }
 
-    const q = Number(quantidade.value);
-    let valorBase = precos[produto.value];
-    let multiplicador = tamanhos[tamanho.value];
+    const quantidade = parseInt(quantidadeInput.value);
+    const preco = precos[produtoSelecionado] || 0;
+    const total = preco * quantidade;
 
-    let valorUnitario = valorBase * multiplicador;
-    let total;
-
-    if (produto.value === "logos") {
-        total = valorBase;
-        valorUnitario = valorBase;
-    } else {
-        total = valorUnitario * q;
-    }
-
-    unitarioSpan.textContent = `R$ ${valorUnitario.toFixed(2)}`;
-    totalSpan.textContent = `R$ ${total.toFixed(2)}`;
+    totalSpan.textContent = "R$ " + total.toFixed(2);
 }
 
-produto.addEventListener("change", calcular);
-quantidade.addEventListener("change", calcular);
-tamanho.addEventListener("change", calcular);
+quantidadeInput.addEventListener("input", calcularTotal);
 
-document.getElementById("finalizar").addEventListener("click", () => {
-    if (!produto.value) {
-        alert("Selecione um produto!");
-        return;
-    }
-
-    const coresSelecionadas = [...document.querySelectorAll(".cores input:checked")]
-        .map(c => c.value)
-        .join(", ");
-
-    alert(
-        `Orçamento finalizado!\n\n` +
-        `Produto: ${produto.value}\n` +
-        `Quantidade: ${quantidade.value}\n` +
-        `Tamanho: ${tamanho.value.toUpperCase()}\n` +
-        `Cores: ${coresSelecionadas || "Nenhuma"}\n` +
-        `Total: ${totalSpan.textContent}`
-    );
-});
-
-calcular();
+carregarProdutos();

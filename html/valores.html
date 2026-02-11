@@ -1,65 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Orçamento</title>
-    <link rel="stylesheet" href="valores.css">
+<meta charset="UTF-8">
+<title>Orçamento</title>
 </head>
+<link rel="stylesheet" href="/css/valores.css">
 <body>
 
 <div class="container">
-    <h2>Orçamento</h2>
-    <p id="cliente"></p>
+<h2>Orçamento</h2>
 
-    <label>Produto</label>
-    <select id="produto">
-        <option value="">Selecione</option>
-        <option value="adesivos">Adesivos</option>
-        <option value="blocos">Blocos de Notas</option>
-        <option value="camisas">Camisas Personalizadas</option>
-        <option value="cartao">Cartão de Visita</option>
-        <option value="logos">Logos</option>
-        <option value="panfletos">Panfletos</option>
-        <option value="pastas">Pastas Personalizadas</option>
-    </select>
+<h3>Escolha o Produto</h3>
+<div class="grid" id="Produtos"></div>
 
-    <label>Quantidade</label>
-    <select id="quantidade">
-        <option value="20">20</option>
-        <option value="40">40</option>
-        <option value="60">60</option>
-        <option value="80">80</option>
-        <option value="100">100</option>
-        <option value="200">Acima de 100</option>
-    </select>
+<h3>Escolha o Tamanho / Gramatura</h3>
+<div class="grid" id="Tamanhos"></div>
 
-    <label>Tamanho</label>
-    <select id="tamanho">
-        <option value="pp">PP</option>
-        <option value="p">P</option>
-        <option value="m">M</option>
-        <option value="g">G</option>
-        <option value="gg">GG</option>
-        <option value="xg">Extra G</option>
-    </select>
+<h3>Escolha a Cor</h3>
+<div class="grid" id="Cores"></div>
 
-    <label>Cores</label>
-    <div class="cores">
-        <label><input type="checkbox" value="Preto"> Preto</label>
-        <label><input type="checkbox" value="Branco"> Branco</label>
-        <label><input type="checkbox" value="Azul"> Azul</label>
-        <label><input type="checkbox" value="Vermelho"> Vermelho</label>
-        <label><input type="checkbox" value="Verde"> Verde</label>
-    </div>
+<h3>Quantidade</h3>
+<input type="number" id="Quantidade" value="1" min="1">
 
-    <div class="resultado">
-        <p>Valor unitário: <strong id="unitario">R$ 0,00</strong></p>
-        <p>Total: <strong id="total">R$ 0,00</strong></p>
-    </div>
-
-    <button id="finalizar">Finalizar Orçamento</button>
+<div class="resultado">
+Total: <strong id="Total">R$ 0,00</strong>
 </div>
 
-<script src="valores.js"></script>
+</div>
+
+<script src="/javascript/valores.js"></script>
 </body>
 </html>
+
