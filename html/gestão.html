@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestão de Procedimentos - Gráfica HolliDay</title>
+<link rel="stylesheet" href="/css/gestão.css">
+</head>
+<body>
+
+<header>
+    <h1>Gestão de Procedimentos</h1>
+    <p>Controle Completo de Produção</p>
+</header>
+
+<section class="novo-pedido">
+    <input type="text" id="nomeCliente" placeholder="Nome do Cliente">
+    <input type="text" id="descricaoPedido" placeholder="Descrição do Pedido">
+    <button onclick="criarPedido()">Confirmar Novo Pedido</button>
+</section>
+
+<section id="listaPedidos" class="pedidos-container"></section>
+
+<script src="/js/gestão.js"></script>
+</body>
+</html>

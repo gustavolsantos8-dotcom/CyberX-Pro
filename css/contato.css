@@ -1,53 +1,66 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #00FFFF, #00c2c2);
 }
 
+/* SECTION */
 .contato {
     padding: 60px 8%;
 }
 
+/* TÍTULOS */
 h1 {
     text-align: center;
-    color: #0f5c66;
-    font-size: 36px;
+    color: #003b3b;
+    font-size: 38px;
+    margin-bottom: 10px;
 }
 
 .subtitulo {
     text-align: center;
-    margin-bottom: 40px;
-    color: #555;
+    margin-bottom: 50px;
+    color: #004f4f;
+    font-size: 18px;
 }
 
+/* CONTAINER */
 .container-contato {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
 }
 
+/* INFO */
 .info {
     flex: 1;
     min-width: 320px;
 }
 
+/* CARDS */
 .card {
     background: white;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card h3 {
-    margin-bottom: 10px;
-    color: #0f5c66;
+    margin-bottom: 12px;
+    color: #006d6d;
 }
 
+/* BOTÕES */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #0f5c66;
+    padding: 10px 22px;
+    background-color: #006d6d;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -66,11 +79,38 @@ h1 {
     background-color: #1da851;
 }
 
+/* MAPA */
 .mapa {
     flex: 1;
     min-width: 320px;
     height: 500px;
-    border-radius: 12px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .container-contato {
+        flex-direction: column;
+    }
+}
+
+/* ========================= */
+/* BLUR + FADE PREMIUM */
+/* ========================= */
+
+.animar {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    filter: blur(10px);
+    transition: opacity 0.9s ease,
+                transform 0.9s ease,
+                filter 0.9s ease;
+}
+
+.animar.ativo {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
 }

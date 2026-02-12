@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    color: #00c2ff;
+    margin-bottom: 10px;
+}
+
+.funcoes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.funcao-btn {
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #00c2ff;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.funcao-btn:hover {
+    background: #00c2ff;
+    transform: translateY(-5px);
+}
+
+.funcionarios-container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.funcionario-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+.funcionario-card h3 {
+    color: #00c2ff;
+    margin-bottom: 10px;
+}

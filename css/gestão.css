@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #00c2ff;
+}
+
+.novo-pedido {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.novo-pedido input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+}
+
+.novo-pedido button {
+    padding: 10px 20px;
+    background: #00c2ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pedidos-container {
+    padding: 40px;
+    display: grid;
+    gap: 25px;
+}
+
+.pedido-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #00c2ff;
+}
+
+textarea, input.funcionario-input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+.botoes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.avancar-btn, .voltar-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.avancar-btn {
+    background: #00c2ff;
+}
+
+.voltar-btn {
+    background: #ff4d4d;
+}
+
+.tempo-total {
+    margin-top: 10px;
+    color: #00ff88;
+    font-weight: bold;
+}
