@@ -9,13 +9,13 @@ let tamanhoSelecionado = null;
 let corSelecionada = null;
 
 const precos = {
-    adesivos: 2,
-    blocos: 15,
-    camisas: 35,
-    cartao: 1.5,
-    logos: 150,
-    panfletos: 0.80,
-    pastas: 12
+    Adesivos: 2,
+    Blocos: 15,
+    Camisas: 35,
+    Cartao: 1.5,
+    Logos: 150,
+    Panfletos: 0.80,
+    Pastas: 12
 };
 
 const produtos = ["Adesivos", "Blocos", "Camisas", "Cartao", "Logos", "Panfletos", "Pastas"];
@@ -36,8 +36,22 @@ function criarCard(nome, tipo, container) {
     const card = document.createElement("div");
     card.classList.add("card");
 
+    let caminhoImagem = "/imagens/banner.png";
+
+    if (tipo === "produto") {
+        caminhoImagem = `imagens/produtos/${nome}.jpg`;
+    }
+
+    if (tipo === "tamanho" && produtoSelecionado) {
+        caminhoImagem = `imagens/${produtoSelecionado}/tamanhos/${nome}.jpg`;
+    }
+
+    if (tipo === "cor" && produtoSelecionado) {
+        caminhoImagem = `imagens/${produtoSelecionado}/cores/${nome}.jpg`;
+    }
+
     card.innerHTML = `
-        <img src="imagens/${tipo}-${nome}.jpg" onerror="this.src='imagens/padrao.jpg'">
+        <img src="${caminhoImagem}" onerror="this.src='/imagens/${nome}.jpg'">
         <p>${nome}</p>
     `;
 
@@ -88,7 +102,7 @@ function calcularTotal() {
     }
 
     const quantidade = parseInt(quantidadeInput.value);
-    const preco = precos[produtoSelecionado] || 0;
+    const preco = precos[produtoSelecionado.toLowerCase()] || 0;
     const total = preco * quantidade;
 
     totalSpan.textContent = "R$ " + total.toFixed(2);

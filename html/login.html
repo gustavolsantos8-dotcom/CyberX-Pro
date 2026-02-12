@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="conteudo" id="login">
-        <h2>Login</h2>
-        <input type="text" placeholder="Usuário" />
-        <input type="password" placeholder="Senha" />
+    <div class="container">
+        <h1>Login</h1>
+        
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="senha" placeholder="Senha">
+        
         <button onclick="logar()">Entrar</button>
-       <a href="CyberX Proinicio2.html">Entrar sem Login</a>
-        <div class="link" onclick="mostrarCadastro()">Não tem conta? Cadastre-se</div>
-        </div>
-        <a href="cadastro.html">Cadastrar-se</a>
+        
+        <p id="mensagem"></p>
+        
+        <a href="cadastro.html">Criar conta</a>
+        <a href="CyberX Proinicio2.html">Entrar Sem Login</a>
+        <script src="/javascript/login.js"></script>
 </body>
 </html>
