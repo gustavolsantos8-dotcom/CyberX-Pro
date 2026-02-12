@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* RODAPÉ */
+footer {
+    background: #d9d9d9;
+    padding: 60px 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col {
+    width: 23%;
+    text-align: center;
+}
+
+.col i {
+    font-size: 28px;
+    color: #2f6f6d;
+    margin-bottom: 15px;
+}
+
+.col p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.horario {
+    margin-top: 15px;
+}
+
+.politica {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.social {
+    background: #eeeeee;
+    padding: 35px;
+    width: 23%;
+    text-align: center;
+}
+
+.social i {
+    margin: 0 8px;
+    font-size: 18px;
+}
+
+.social p {
+    margin-top: 20px;
+    font-size: 14px;
+}
