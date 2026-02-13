@@ -1,15 +1,15 @@
-body {
+* {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #00FFFF, #00c2c2);
+    padding: 0;
+    box-sizing: border-box;
 }
-
-/* SECTION */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f8;
+}
 .contato {
     padding: 60px 8%;
 }
-
-/* TÍTULOS */
 h1 {
     text-align: center;
     color: #003b3b;
@@ -20,30 +20,24 @@ h1 {
 .subtitulo {
     text-align: center;
     margin-bottom: 50px;
-    color: #004f4f;
+    color: #555;
     font-size: 18px;
 }
-
-/* CONTAINER */
 .container-contato {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
 }
-
-/* INFO */
 .info {
     flex: 1;
     min-width: 320px;
 }
-
-/* CARDS */
 .card {
-    background: white;
+    background: #ffffff;
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
 }
 
@@ -55,8 +49,6 @@ h1 {
     margin-bottom: 12px;
     color: #006d6d;
 }
-
-/* BOTÕES */
 .btn {
     display: inline-block;
     padding: 10px 22px;
@@ -68,7 +60,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #0c474f;
+    background-color: #004f4f;
 }
 
 .whatsapp {
@@ -78,39 +70,32 @@ h1 {
 .whatsapp:hover {
     background-color: #1da851;
 }
-
-/* MAPA */
 .mapa {
     flex: 1;
     min-width: 320px;
     height: 500px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* RESPONSIVO */
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 @media (max-width: 900px) {
     .container-contato {
         flex-direction: column;
     }
 }
-
-/* ========================= */
-/* BLUR + FADE PREMIUM */
-/* ========================= */
-
 .animar {
     opacity: 0;
-    transform: translateY(40px) scale(0.98);
-    filter: blur(10px);
-    transition: opacity 0.9s ease,
-                transform 0.9s ease,
-                filter 0.9s ease;
+    transform: translateY(40px);
+    transition: 0.6s ease;
 }
 
 .animar.ativo {
     opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0);
+    transform: translateY(0);
 }
