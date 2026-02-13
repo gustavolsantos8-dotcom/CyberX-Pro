@@ -99,3 +99,24 @@ h1 {
     opacity: 1;
     transform: translateY(0);
 }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #002f3d 0%,
+        #004f5f 35%,
+        #008b9a 70%,
+        #f4f6f8 100%
+    );
+    min-height: 100vh;
+}
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
