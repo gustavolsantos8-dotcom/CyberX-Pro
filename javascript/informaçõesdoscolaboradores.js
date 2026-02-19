@@ -1,6 +1,6 @@
 const dadosFuncionarios = [
 
-    // Produção
+
     { nome: "Carlos Eduardo Almeida", cargo: "Impressor Offset", nascimento: "1985-06-12", tempoEmpresa: "8 anos" },
     { nome: "Marcos Vinícius Rocha", cargo: "Cortador", nascimento: "1988-04-18", tempoEmpresa: "7 anos" },
     { nome: "Fernando Luiz Costa", cargo: "Brochurista", nascimento: "1991-09-10", tempoEmpresa: "6 anos" },
@@ -9,18 +9,18 @@ const dadosFuncionarios = [
     { nome: "Patrícia Oliveira Santos", cargo: "Arte Finalista", nascimento: "1995-07-30", tempoEmpresa: "4 anos" },
     { nome: "Roberta Alves Ferreira", cargo: "Supervisor de Arte Finalista", nascimento: "1984-01-12", tempoEmpresa: "11 anos" },
 
-    // Financeiro
+
     { nome: "Lucas Henrique Barros", cargo: "Auxiliar Financeiro", nascimento: "1996-05-14", tempoEmpresa: "3 anos" },
     { nome: "Cláudia Regina Mendes", cargo: "Supervisor Financeiro", nascimento: "1980-08-09", tempoEmpresa: "12 anos" },
 
-    // Comercial
+
     { nome: "Eduardo Pires Gomes", cargo: "Supervisor Comercial", nascimento: "1983-11-21", tempoEmpresa: "10 anos" },
     { nome: "Amanda Ribeiro Costa", cargo: "Consultor de Vendas", nascimento: "1993-06-02", tempoEmpresa: "6 anos" },
     { nome: "Thiago Martins Oliveira", cargo: "Consultor de Vendas", nascimento: "1990-10-15", tempoEmpresa: "5 anos" },
     { nome: "Larissa Fernandes Silva", cargo: "Atendente", nascimento: "1998-12-05", tempoEmpresa: "2 anos" },
     { nome: "Bruno César Almeida", cargo: "Orçamentista", nascimento: "1989-03-19", tempoEmpresa: "7 anos" },
 
-    // Apoio
+
     { nome: "Roberto Lima Santos", cargo: "Motoboy", nascimento: "1990-11-02", tempoEmpresa: "6 anos" },
     { nome: "André Felipe Rocha", cargo: "Motoboy", nascimento: "1994-08-14", tempoEmpresa: "3 anos" },
     { nome: "Maria Aparecida Silva", cargo: "Faxineira", nascimento: "1978-01-20", tempoEmpresa: "10 anos" },

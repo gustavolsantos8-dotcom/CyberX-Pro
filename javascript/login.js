@@ -16,7 +16,7 @@ function logar(){
         mensagem.innerHTML = "Login realizado com sucesso!";
 
         setTimeout(()=>{
-            window.location.href = "index.html"; // sua página principal
+            window.location.href = "index.html"; 
         },1000);
     }
     else{

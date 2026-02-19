@@ -1,12 +1,20 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #002f3d 0%,
+        #004f5f 35%,
+        #008b9a 70%,
+        #f4f6f8 100%
+    );
+    min-height: 100vh;
     color: white;
 }
 
@@ -16,7 +24,8 @@ header {
 }
 
 header h1 {
-    color: #00c2ff;
+    color: #ffffff;
+    font-size: 32px;
 }
 
 .novo-pedido {
@@ -32,15 +41,22 @@ header h1 {
     border-radius: 8px;
     border: none;
     width: 200px;
+    background: rgba(255,255,255,0.9);
 }
 
 .novo-pedido button {
     padding: 10px 20px;
-    background: #00c2ff;
+    background: #006d6d;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.novo-pedido button:hover {
+    background: #004f4f;
 }
 
 .pedidos-container {
@@ -50,10 +66,18 @@ header h1 {
 }
 
 .pedido-card {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
     padding: 20px;
     border-radius: 15px;
-    border-left: 5px solid #00c2ff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-left: 6px solid #006d6d;
+    color: #002f3d;
+    transition: 0.3s;
+}
+
+.pedido-card:hover {
+    transform: translateY(-5px);
 }
 
 textarea, input.funcionario-input {
@@ -61,7 +85,7 @@ textarea, input.funcionario-input {
     margin-top: 10px;
     padding: 8px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid #ccc;
 }
 
 .botoes {
@@ -76,18 +100,28 @@ textarea, input.funcionario-input {
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    color: white;
+    transition: 0.3s;
 }
 
 .avancar-btn {
-    background: #00c2ff;
+    background: #006d6d;
+}
+
+.avancar-btn:hover {
+    background: #004f4f;
 }
 
 .voltar-btn {
-    background: #ff4d4d;
+    background: #008b9a;
+}
+
+.voltar-btn:hover {
+    background: #006d6d;
 }
 
 .tempo-total {
     margin-top: 10px;
-    color: #00ff88;
+    color: #008b9a;
     font-weight: bold;
 }
