@@ -30,13 +30,13 @@ const tamanhosPorProduto = {
     Pastas: ["A4"]
 };
 
-const cores = ["Preto", "Branco", "Azul", "Vermelho", "Verde"];
+const cores = ["Preto", "Branco", "Azul", "Vermelho", "Verde", "Amarelo"];
 
 function criarCard(nome, tipo, container) {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    let caminhoImagem = "/imagens/banner.png";
+    let caminhoImagem = "imagens/";
 
     if (tipo === "produto") {
         caminhoImagem = `imagens/produtos/${nome}.jpg`;
@@ -102,6 +102,7 @@ function calcularTotal() {
     }
 
     const quantidade = parseInt(quantidadeInput.value);
+    
     const preco = precos[produtoSelecionado.toLowerCase()] || 0;
     const total = preco * quantidade;
 
