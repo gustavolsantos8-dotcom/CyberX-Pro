@@ -15,7 +15,7 @@ const precos = {
     Cartao: 1.5,
     Logos: 150,
     Panfletos: 0.80,
-    Pastas: 12
+    Pastas: 12,
 };
 
 const produtos = ["Adesivos", "Blocos", "Camisas", "Cartao", "Logos", "Panfletos", "Pastas"];
