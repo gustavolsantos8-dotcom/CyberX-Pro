@@ -178,4 +178,23 @@ input[type="number"] {
     margin-top: 15px;
 }
 }
+.botoes-orcamento{
+    margin-top:20px;
+    display:flex;
+    gap:10px;
+}
 
+.botoes-orcamento .voltar{
+    background:#607d8b;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.botoes-orcamento .voltar:hover{
+    background:#455a64;
+}

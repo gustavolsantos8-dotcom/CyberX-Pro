@@ -112,3 +112,6 @@ function calcularTotal() {
 quantidadeInput.addEventListener("input", calcularTotal);
 
 carregarProdutos();
+function voltarInicio(){
+    window.location.href = "CyberX Proinicio2.html";
+}
