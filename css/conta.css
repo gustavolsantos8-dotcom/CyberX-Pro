@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+
+header{
+    background: linear-gradient(135deg, #00bcd4, #007c91);
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.perfil-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+    display:flex;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.foto-perfil img{
+    width:120px;
+    border-radius:50%;
+    background:#e0f7fa;
+    padding:10px;
+}
+
+.dados{
+    flex:1;
+}
+
+.dados h2{
+    margin-bottom:20px;
+    color:#007c91;
+}
+
+.dados label{
+    display:block;
+    margin-top:15px;
+    font-weight:600;
+}
+
+.dados input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.botoes{
+    margin-top:25px;
+    display:flex;
+    gap:10px;
+}
+
+.botoes button{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    background:#00bcd4;
+    color:white;
+    transition:0.3s;
+}
+
+.botoes button:hover{
+    background:#0097a7;
+}
+
+.botoes .sair{
+    background:#e53935;
+}
+
+.pedidos{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+.pedidos h2{
+    margin-bottom:15px;
+    color:#007c91;
+}
+
+.pedidos ul{
+    list-style:none;
+}
+
+.pedidos li{
+    padding:10px;
+    margin-bottom:8px;
+    background:#e0f7fa;
+    border-radius:6px;
+}
+.botoes .voltar{
+    background:#607d8b;
+}
+
+.botoes .voltar:hover{
+    background:#455a64;
+}

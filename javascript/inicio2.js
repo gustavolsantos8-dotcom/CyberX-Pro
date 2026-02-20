@@ -5,8 +5,18 @@ if(!logado){
     window.location.href = "login.html";
 }
 
-const icone = document.getElementById("iconeUsuario");
-const menu = document.getElementById("menuUsuario");
+const btnPerfil = document.getElementById("btnPerfil");
+const menuPerfil = document.getElementById("menuPerfil");
+btnPerfil.addEventListener("click", () => {
+    menuPerfil.style.display =
+        menuPerfil.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", function(event) {
+    if (!event.target.closest(".usuario")) {
+        menuPerfil.style.display = "none";
+    }
+});
 
 if(tipo === "visitante"){
     menu.innerHTML = `
