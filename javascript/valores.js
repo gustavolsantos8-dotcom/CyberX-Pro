@@ -30,7 +30,8 @@ const tamanhosPorProduto = {
     Pastas: ["A4"]
 };
 
-const cores = ["Preto", "Branco", "Azul", "Vermelho", "Verde", "Amarelo"];
+const cores = ["Preto", "Branco", "Azul", "Vermelho", "Verde", "Amarelo", "Personalizado"];
+
 
 function criarCard(nome, tipo, container) {
     const card = document.createElement("div");
@@ -103,7 +104,7 @@ function calcularTotal() {
 
     const quantidade = parseInt(quantidadeInput.value);
     
-    const preco = precos[produtoSelecionado.toLowerCase()] || 0;
+    const preco = precos[produtoSelecionado] || 0;
     const total = preco * quantidade;
 
     totalSpan.textContent = "R$ " + total.toFixed(2);
