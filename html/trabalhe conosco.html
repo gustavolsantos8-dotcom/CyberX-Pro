@@ -10,12 +10,9 @@
 
 <body>
     <form>
-
-<a href="../html/CyberX Proinicio2.html" class="voltar">
-    ← Voltar
-</a>
-    
-
+        <a href="../html/CyberX Proinicio2.html" class="voltar">
+            ← Voltar
+        </a>
                 <h1 id="titulos">Trabalhe Conosco</h1>
         <label>Nome completo</label>
         <input type="text" id="nome" placeholder="Digite seu nome" required>
@@ -28,7 +25,7 @@
 
         
 
-        <div class="caixa_Endereço">
+        <div class="caixa_Endereço">    
 
             <h3 id="titulos">Endereço</h3>
         
@@ -36,37 +33,37 @@
         
                 <div class="campo cep">
                     <label>CEP</label>
-                    <input type="text" id="cep" placeholder="Digite o CEP" required>
+                    <input type="text" id="cep" placeholder="Digite o CEP">
                 </div>
         
                 <div class="campo rua">
                     <label>Rua</label>
-                    <input type="text" id="rua" required>
+                    <input type="text" id="rua">
                 </div>
         
                 <div class="campo bairro">
                     <label>Bairro</label>
-                    <input type="text" id="bairro" required>
+                    <input type="text" id="bairro">
                 </div>
         
                 <div class="campo cidade">
                     <label>Cidade</label>
-                    <input type="text" id="cidade" required>
+                    <input type="text" id="cidade">
                 </div>
         
                 <div class="campo estado">
                     <label>Estado</label>
-                    <input type="text" id="estado" required>
+                    <input type="text" id="estado">
                 </div>
         
                 <div class="campo numero">
                     <label>Número</label>
-                    <input type="text" id="numero" required>
+                    <input type="text" id="numero">
                 </div>
         
                 <div class="campo complemento">
                     <label>Complemento</label>
-                    <input type="text" id="complemento" required>
+                    <input type="text" id="complemento">
                 </div>
         
             </div>
@@ -74,7 +71,7 @@
         
 
         <label for="Interesse">Área de Interesse</label>
-        <select id="Interesse" name="Interesse" required>
+        <select id="Interesse" name="Interesse">
             <option value="Impressor Offset">Impressor Offset</option>
             <option value="Cortador">Cortador</option>
             <option value="Brochurista">Brochurista</option>
@@ -102,17 +99,8 @@
         <input type="number" id="Salário" placeholder="Digite o Salário Pretendido" min="0" required>
 
        
-      <div class="upload-box">
-    <label for="arquivo" class="upload-label">
-        📎 Enviar Currículo
-    </label>
-
-    <input type="file" id="arquivo" accept=".doc,.docx,.pdf,.jpg" required>
-
-    <span id="nomeArquivo">Nenhum arquivo selecionado</span>
-
-    <small>Formatos permitidos: doc, docx, pdf, jpg (Máx: 5MB)</small>
-</div>
+        <input type="file" id="arquivo" alue="Procurar Arquivo">
+        <h6> Enviar Arquivo (doc | docx | pdf | jpg ) (Max: 5MB):</h6>
         <input type="submit">
     </form>
     <script src="/javascript/trabalhe.js"></script>

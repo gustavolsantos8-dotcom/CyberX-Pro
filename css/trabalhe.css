@@ -217,7 +217,8 @@ button:hover {
     font-weight: bold;
     transition: 0.3s;
     margin-bottom: 15px;
-    margin-left: -15px;
+    width: 100px;
+    
 }
 
 .voltar:hover {
