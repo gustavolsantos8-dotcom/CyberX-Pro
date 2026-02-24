@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Orçamento</title>
-</head>
 <link rel="stylesheet" href="/css/valores.css">
+</head>
+
 <body>
 
 <div class="container">
+
 <h2>Orçamento</h2>
+
 <div class="botoes-orcamento">
     <button class="voltar" onclick="voltarInicio()">Voltar</button>
 </div>
@@ -28,8 +31,34 @@
 <div class="resultado">
 Total: <strong id="Total">R$ 0,00</strong>
 </div>
+<button id="btnEnviarPedido" class="btn-enviar-pedido" onclick="enviarPedido()">
+    Enviar Pedido
+</button>
+<div id="areaPersonalizacao" class="area-personalizacao">
+
+    <p>
+        Descreva abaixo como deseja personalizar seu produto.
+        Você também pode enviar uma imagem de referência.
+    </p>
+
+    <textarea id="descricaoPersonalizacao"
+    placeholder="Digite aqui como você deseja seu produto personalizado..."></textarea>
+
+    <div class="upload-imagem">
+        <label>Enviar imagem de referência:</label>
+        <input type="file" id="imagemReferencia" accept="image/*">
+    </div>
+
+    <button class="btn-enviar-personalizacao" onclick="enviarPersonalizacao()">
+        Enviar Personalização
+    </button>
+
+    <div id="mensagemSucesso" class="mensagem-sucesso"></div>
+
+</div>
+
+</div>
 
 <script src="/javascript/valores.js"></script>
 </body>
 </html>
-

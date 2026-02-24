@@ -1,3 +1,4 @@
+const btnEnviarPedido = document.getElementById("btnEnviarPedido");
 const produtosDiv = document.getElementById("Produtos");
 const tamanhosDiv = document.getElementById("Tamanhos");
 const coresDiv = document.getElementById("Cores");
@@ -18,7 +19,16 @@ const precos = {
     Pastas: 12,
 };
 
-const produtos = ["Adesivos", "Blocos", "Camisas", "Cartao", "Logos", "Panfletos", "Pastas"];
+const produtos = [
+    "Adesivos",
+    "Blocos",
+    "Camisas",
+    "Cartao",
+    "Logos",
+    "Panfletos",
+    "Pastas",
+    "Personalizar"
+];
 
 const tamanhosPorProduto = {
     Adesivos: ["5x5", "10x10"],
@@ -33,13 +43,19 @@ const tamanhosPorProduto = {
 const cores = ["Preto", "Branco", "Azul", "Vermelho", "Verde", "Amarelo"];
 
 function criarCard(nome, tipo, container) {
+
     const card = document.createElement("div");
     card.classList.add("card");
 
-    let caminhoImagem = "imagens/";
+    let caminhoImagem = "";
 
     if (tipo === "produto") {
-        caminhoImagem = `imagens/produtos/${nome}.jpg`;
+
+        if (nome === "Personalizar") {
+            caminhoImagem = "imagens/personalizar.jpg";
+        } else {
+            caminhoImagem = `imagens/produtos/${nome}.jpg`;
+        }
     }
 
     if (tipo === "tamanho" && produtoSelecionado) {
@@ -56,8 +72,20 @@ function criarCard(nome, tipo, container) {
     `;
 
     card.addEventListener("click", () => {
+
         container.querySelectorAll(".card").forEach(c => c.classList.remove("selected"));
         card.classList.add("selected");
+
+        if (nome === "Personalizar") {
+            document.getElementById("areaPersonalizacao").style.display = "block";
+            produtoSelecionado = null;
+            tamanhoSelecionado = null;
+            corSelecionada = null;
+            totalSpan.textContent = "R$ 0,00";
+            return;
+        }
+
+        document.getElementById("areaPersonalizacao").style.display = "none";
 
         if (tipo === "produto") {
             produtoSelecionado = nome;
@@ -78,6 +106,7 @@ function carregarProdutos() {
 }
 
 function carregarTamanhos() {
+
     tamanhosDiv.innerHTML = "";
     coresDiv.innerHTML = "";
 
@@ -96,14 +125,14 @@ function carregarTamanhos() {
 }
 
 function calcularTotal() {
+
     if (!produtoSelecionado) {
         totalSpan.textContent = "R$ 0,00";
         return;
     }
 
     const quantidade = parseInt(quantidadeInput.value);
-    
-    const preco = precos[produtoSelecionado.toLowerCase()] || 0;
+    const preco = precos[produtoSelecionado] || 0;
     const total = preco * quantidade;
 
     totalSpan.textContent = "R$ " + total.toFixed(2);
@@ -112,6 +141,43 @@ function calcularTotal() {
 quantidadeInput.addEventListener("input", calcularTotal);
 
 carregarProdutos();
+if (produtoSelecionado && tamanhoSelecionado && corSelecionada) {
+    btnEnviarPedido.style.display = "block";
+} else {
+    btnEnviarPedido.style.display = "none";
+}
+
+function enviarPersonalizacao() {
+
+    const descricao = document.getElementById("descricaoPersonalizacao").value;
+    const imagem = document.getElementById("imagemReferencia").files[0];
+    const mensagem = document.getElementById("mensagemSucesso");
+
+    if (descricao.trim() === "" && !imagem) {
+        alert("Por favor, escreva algo ou envie uma imagem.");
+        return;
+    }
+
+    mensagem.textContent = "Personalização enviada com sucesso! ✔️";
+
+    document.getElementById("descricaoPersonalizacao").value = "";
+    document.getElementById("imagemReferencia").value = "";
+}
+
 function voltarInicio(){
     window.location.href = "CyberX Proinicio2.html";
+}
+function enviarPedido() {
+
+    const pedido = {
+        produto: produtoSelecionado,
+        tamanho: tamanhoSelecionado,
+        cor: corSelecionada,
+        quantidade: quantidadeInput.value,
+        total: totalSpan.textContent
+    };
+
+    localStorage.setItem("pedidoAtual", JSON.stringify(pedido));
+
+    window.location.href = "pagamento.html";
 }
