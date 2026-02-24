@@ -2,7 +2,7 @@ if(!localStorage.getItem("usuarioLogado")){
     window.location.href = "login.html";
 }
 
-// Pedidos de exemplo (visual demonstrativo)
+
 const pedidos = [
     {
         id: 1,
