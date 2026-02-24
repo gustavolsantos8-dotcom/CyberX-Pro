@@ -36,46 +36,6 @@ header{
     margin-bottom:10px;
 }
 
-.faq{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 8px 18px rgba(0,0,0,0.1);
-}
-
-.faq h2{
-    margin-bottom:20px;
-    color:#007c91;
-}
-
-.faq-item{
-    margin-bottom:15px;
-}
-
-.faq-question{
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    background:#00bcd4;
-    color:white;
-    font-weight:600;
-    cursor:pointer;
-    text-align:left;
-    transition:0.3s;
-}
-
-.faq-question:hover{
-    background:#0097a7;
-}
-
-.faq-answer{
-    display:none;
-    padding:12px;
-    margin-top:5px;
-    background:#e0f7fa;
-    border-radius:6px;
-}
 .voltar{
     margin-top:30px;
     text-align:center;

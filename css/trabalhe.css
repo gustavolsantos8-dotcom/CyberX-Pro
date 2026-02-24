@@ -162,3 +162,65 @@ button:hover {
     outline: none;
     box-shadow: 0 0 4px rgba(42,82,152,0.3);
 }
+
+.upload-box {
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px dashed #2a5298;
+    border-radius: 10px;
+    background-color: #f4f7fb;
+    text-align: center;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1e3c72;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.upload-label:hover {
+    background-color: #16305c;
+}
+
+#arquivo {
+    display: none;
+}
+
+.upload-box small {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #555;
+}
+
+#nomeArquivo {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+.voltar {
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #1e3c72;
+    color: #1e3c72;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    margin-left: -15px;
+}
+
+.voltar:hover {
+    background: #1e3c72;
+    color: white;
+}

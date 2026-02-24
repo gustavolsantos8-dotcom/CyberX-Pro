@@ -20,3 +20,14 @@ document.getElementById("cep").addEventListener("blur", function () {
         })
         .catch(() => alert("Erro ao buscar CEP"));
 });
+
+const inputArquivo = document.getElementById("arquivo");
+const nomeArquivo = document.getElementById("nomeArquivo");
+
+inputArquivo.addEventListener("change", function () {
+    if (this.files.length > 0) {
+        nomeArquivo.textContent = this.files[0].name;
+    } else {
+        nomeArquivo.textContent = "Nenhum arquivo selecionado";
+    }
+});
