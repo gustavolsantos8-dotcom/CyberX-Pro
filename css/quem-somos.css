@@ -118,19 +118,18 @@ h1 {
 .card-depoimento:hover {
     transform: translateY(-8px);
 }
-
 .foto-cliente {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    top: -35px;
+    top: -45px;
     left: 50%;
     transform: translateX(-50%);
     border: 4px solid #002f3d;
+    background: #fff;
 }
-
 .nome-cliente {
     margin-top: 40px;
     font-weight: 600;
