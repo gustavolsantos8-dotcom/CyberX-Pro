@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - Gráfica HolliDay</title>
+<link rel="stylesheet" href="/css/checkout.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Finalizar Pedido</h1>
+</header>
+
+<main class="checkout-container">
+
+    <section class="dados-cliente">
+        <h2>Dados do Cliente</h2>
+        <input type="text" id="nome" placeholder="Nome completo">
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="text" id="telefone" placeholder="Telefone">
+        <input type="text" id="endereco" placeholder="Endereço para entrega">
+    </section>
+
+    <section class="pagamento">
+        <h2>Forma de Pagamento</h2>
+        <select id="formaPagamento">
+            <option value="">Selecione</option>
+            <option>Pix</option>
+            <option>Cartão de Crédito</option>
+            <option>Cartão de Débito</option>
+        </select>
+    </section>
+
+    <button id="btnConfirmar" class="btn-confirmar">
+        Confirmar Pedido
+    </button>
+
+    <div id="mensagemFinal"></div>
+
+</main>
+
+<script src="/javascript/checkout.js"></script>
+</body>
+</html>

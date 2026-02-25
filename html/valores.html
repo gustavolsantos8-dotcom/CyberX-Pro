@@ -2,62 +2,67 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Orçamento</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orçamento | Gráfica HolliDay</title>
 <link rel="stylesheet" href="/css/valores.css">
 </head>
 
 <body>
 
-<div class="container">
+<header class="header">
+    <h1>Gráfica HolliDay</h1>
+    <p>Orçamento Online Profissional</p>
+</header>
 
-<h2>Orçamento</h2>
+<main class="container">
 
-<div class="botoes-orcamento">
-    <button class="voltar" onclick="voltarInicio()">Voltar</button>
-</div>
+    <section>
+        <h2>1. Escolha o Produto</h2>
+        <div class="grid" id="produtos"></div>
+    </section>
 
-<h3>Escolha o Produto</h3>
-<div class="grid" id="Produtos"></div>
+    <section>
+        <h2>2. Escolha o Tamanho / Modelo</h2>
+        <div class="grid" id="tamanhos"></div>
+    </section>
 
-<h3>Escolha o Tamanho</h3>
-<div class="grid" id="Tamanhos"></div>
+    <section>
+        <h2>3. Escolha a Cor</h2>
+        <div class="grid" id="cores"></div>
+    </section>
 
-<h3>Escolha a Cor</h3>
-<div class="grid" id="Cores"></div>
+    <section class="quantidade-section">
+        <h2>4. Quantidade</h2>
+        <input type="number" id="quantidade" min="0" value="0">
+    </section>
 
-<h3>Quantidade</h3>
-<input type="number" id="Quantidade" value="1" min="1">
+    
+    <section class="resultado-box" > 
+        <p>Total do Pedido</p>
+        <h3 id="total">R$ 0,00</h3>
+        
+        <button  id="btnPedido" class="btn-principal" >
+            Finalizar Pedido
+        </button>
+        
+    </section>
+    
 
-<div class="resultado">
-Total: <strong id="Total">R$ 0,00</strong>
-</div>
-<button id="btnEnviarPedido" class="btn-enviar-pedido" onclick="enviarPedido()">
-    Enviar Pedido
-</button>
-<div id="areaPersonalizacao" class="area-personalizacao">
+    <section id="areaPersonalizacao" class="personalizacao">
+        <h2>Personalização</h2>
+        <textarea id="descricaoPersonalizacao"
+        placeholder="Descreva como deseja seu produto personalizado..."></textarea>
 
-    <p>
-        Descreva abaixo como deseja personalizar seu produto.
-        Você também pode enviar uma imagem de referência.
-    </p>
-
-    <textarea id="descricaoPersonalizacao"
-    placeholder="Digite aqui como você deseja seu produto personalizado..."></textarea>
-
-    <div class="upload-imagem">
-        <label>Enviar imagem de referência:</label>
         <input type="file" id="imagemReferencia" accept="image/*">
-    </div>
 
-    <button class="btn-enviar-personalizacao" onclick="enviarPersonalizacao()">
-        Enviar Personalização
-    </button>
+        <button id="btnEnviarPersonalizacao" class="btn-secundario">
+            Enviar Personalização
+        </button>
 
-    <div id="mensagemSucesso" class="mensagem-sucesso"></div>
+        <div id="mensagemSucesso"></div>
+    </section>
 
-</div>
-
-</div>
+</main>
 
 <script src="/javascript/valores.js"></script>
 </body>

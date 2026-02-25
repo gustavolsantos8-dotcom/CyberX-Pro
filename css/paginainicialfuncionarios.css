@@ -1,0 +1,94 @@
+:root {
+    --verde-escuro: #062f2f;
+    --verde-medio: #0b4c4c;
+    --verde-claro: #1f8a8a;
+    --branco: #ffffff;
+    --cinza: #f2f2f2;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde-medio));
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: var(--branco);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: var(--verde-medio);
+    margin-bottom: 20px;
+}
+
+.grid-funcoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card-funcao {
+    background: var(--cinza);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-funcao:hover {
+    background: var(--verde-claro);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.filtros {
+    margin-bottom: 20px;
+}
+
+.filtros button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--verde-medio);
+    color: white;
+}
+
+.grid-pedidos {
+    display: grid;
+    gap: 15px;
+}
+
+.card-pedido {
+    padding: 15px;
+    background: var(--cinza);
+    border-radius: 10px;
+}
+
+.btn-voltar {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: var(--verde-escuro);
+    color: white;
+    cursor: pointer;
+}

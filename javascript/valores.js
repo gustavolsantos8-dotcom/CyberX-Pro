@@ -1,9 +1,10 @@
-const btnEnviarPedido = document.getElementById("btnEnviarPedido");
-const produtosDiv = document.getElementById("Produtos");
-const tamanhosDiv = document.getElementById("Tamanhos");
-const coresDiv = document.getElementById("Cores");
-const quantidadeInput = document.getElementById("Quantidade");
-const totalSpan = document.getElementById("Total");
+const produtosEl = document.getElementById("produtos");
+const tamanhosEl = document.getElementById("tamanhos");
+const coresEl = document.getElementById("cores");
+const quantidadeEl = document.getElementById("quantidade");
+const totalEl = document.getElementById("total");
+const btnPedido = document.getElementById("btnPedido");
+const areaPersonalizacao = document.getElementById("areaPersonalizacao");
 
 let produtoSelecionado = null;
 let tamanhoSelecionado = null;
@@ -16,7 +17,7 @@ const precos = {
     Cartao: 1.5,
     Logos: 150,
     Panfletos: 0.80,
-    Pastas: 12,
+    Pastas: 12
 };
 
 const produtos = [
@@ -42,142 +43,83 @@ const tamanhosPorProduto = {
 
 const cores = ["Preto", "Branco", "Azul", "Vermelho", "Verde", "Amarelo"];
 
-function criarCard(nome, tipo, container) {
+function criarCards(lista, container, tipo) {
+    container.innerHTML = "";
 
-    const card = document.createElement("div");
-    card.classList.add("card");
+    lista.forEach(item => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.textContent = item;
 
-    let caminhoImagem = "";
+        card.addEventListener("click", () => selecionar(card, item, tipo, container));
+
+        container.appendChild(card);
+    });
+}
+
+function selecionar(card, valor, tipo, container) {
+    container.querySelectorAll(".card").forEach(c => c.classList.remove("selected"));
+    card.classList.add("selected");
+
+    if (valor === "Personalizar") {
+        areaPersonalizacao.style.display = "block";
+        produtoSelecionado = null;
+        atualizarTotal();
+        return;
+    } else {
+        areaPersonalizacao.style.display = "none";
+    }
 
     if (tipo === "produto") {
-
-        if (nome === "Personalizar") {
-            caminhoImagem = "imagens/personalizar.jpg";
-        } else {
-            caminhoImagem = `imagens/produtos/${nome}.jpg`;
-        }
+        produtoSelecionado = valor;
+        criarCards(tamanhosPorProduto[valor], tamanhosEl, "tamanho");
+        criarCards(cores, coresEl, "cor");
     }
 
-    if (tipo === "tamanho" && produtoSelecionado) {
-        caminhoImagem = `imagens/${produtoSelecionado}/tamanhos/${nome}.jpg`;
-    }
+    if (tipo === "tamanho") tamanhoSelecionado = valor;
+    if (tipo === "cor") corSelecionada = valor;
 
-    if (tipo === "cor" && produtoSelecionado) {
-        caminhoImagem = `imagens/${produtoSelecionado}/cores/${nome}.jpg`;
-    }
-
-    card.innerHTML = `
-        <img src="${caminhoImagem}" onerror="this.src='/imagens/${nome}.jpg'">
-        <p>${nome}</p>
-    `;
-
-    card.addEventListener("click", () => {
-
-        container.querySelectorAll(".card").forEach(c => c.classList.remove("selected"));
-        card.classList.add("selected");
-
-        if (nome === "Personalizar") {
-            document.getElementById("areaPersonalizacao").style.display = "block";
-            produtoSelecionado = null;
-            tamanhoSelecionado = null;
-            corSelecionada = null;
-            totalSpan.textContent = "R$ 0,00";
-            return;
-        }
-
-        document.getElementById("areaPersonalizacao").style.display = "none";
-
-        if (tipo === "produto") {
-            produtoSelecionado = nome;
-            carregarTamanhos();
-        }
-
-        if (tipo === "tamanho") tamanhoSelecionado = nome;
-        if (tipo === "cor") corSelecionada = nome;
-
-        calcularTotal();
-    });
-
-    container.appendChild(card);
+    atualizarTotal();
+    validarPedido();
 }
 
-function carregarProdutos() {
-    produtos.forEach(prod => criarCard(prod, "produto", produtosDiv));
-}
-
-function carregarTamanhos() {
-
-    tamanhosDiv.innerHTML = "";
-    coresDiv.innerHTML = "";
-
-    tamanhoSelecionado = null;
-    corSelecionada = null;
-
-    if (!produtoSelecionado) return;
-
-    tamanhosPorProduto[produtoSelecionado].forEach(t =>
-        criarCard(t, "tamanho", tamanhosDiv)
-    );
-
-    cores.forEach(c =>
-        criarCard(c, "cor", coresDiv)
-    );
-}
-
-function calcularTotal() {
-
+function atualizarTotal() {
     if (!produtoSelecionado) {
-        totalSpan.textContent = "R$ 0,00";
+        totalEl.textContent = "R$ 0,00";
         return;
     }
 
-    const quantidade = parseInt(quantidadeInput.value);
+    const quantidade = parseInt(quantidadeEl.value);
     const preco = precos[produtoSelecionado] || 0;
     const total = preco * quantidade;
 
-    totalSpan.textContent = "R$ " + total.toFixed(2);
+    totalEl.textContent = total.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    });
 }
 
-quantidadeInput.addEventListener("input", calcularTotal);
-
-carregarProdutos();
-if (produtoSelecionado && tamanhoSelecionado && corSelecionada) {
-    btnEnviarPedido.style.display = "block";
-} else {
-    btnEnviarPedido.style.display = "none";
+function validarPedido() {
+    btnPedido.disabled = !(produtoSelecionado && tamanhoSelecionado && corSelecionada);
 }
 
-function enviarPersonalizacao() {
+quantidadeEl.addEventListener("input", atualizarTotal);
 
-    const descricao = document.getElementById("descricaoPersonalizacao").value;
-    const imagem = document.getElementById("imagemReferencia").files[0];
-    const mensagem = document.getElementById("mensagemSucesso");
+btnPedido.addEventListener("click", () => {
+    alert("Pedido enviado com sucesso para a Gráfica HolliDay!");
+});
 
-    if (descricao.trim() === "" && !imagem) {
-        alert("Por favor, escreva algo ou envie uma imagem.");
-        return;
-    }
+document.getElementById("btnEnviarPersonalizacao")
+.addEventListener("click", () => {
+    document.getElementById("mensagemSucesso")
+    .textContent = "Personalização enviada com sucesso!";
+});
 
-    mensagem.textContent = "Personalização enviada com sucesso! ✔️";
-
-    document.getElementById("descricaoPersonalizacao").value = "";
-    document.getElementById("imagemReferencia").value = "";
-}
-
-function voltarInicio(){
-    window.location.href = "CyberX Proinicio2.html";
-}
-function enviarPedido() {
-
-    const pedido = {
-        produto: produtoSelecionado,
-        tamanho: tamanhoSelecionado,
-        cor: corSelecionada,
-        quantidade: quantidadeInput.value,
-        total: totalSpan.textContent
-    };
-
-    localStorage.setItem("pedidoAtual", JSON.stringify(pedido));
-
-    window.location.href = "pagamento.html";
-}
+criarCards(produtos, produtosEl, "produto");
+document.getElementById("btnPedido").addEventListener("click", function() {
+    const total = document.getElementById("total").innerText;
+    const quantidade = document.getElementById("quantidade").value;
+    localStorage.setItem("pedidoTotal", total);
+    localStorage.setItem("pedidoQuantidade", quantidade);
+    window.location.href = "checkout.html";
+});
