@@ -116,3 +116,10 @@ document.getElementById("btnEnviarPersonalizacao")
 });
 
 criarCards(produtos, produtosEl, "produto");
+document.getElementById("btnPedido").addEventListener("click", function() {
+    const total = document.getElementById("total").innerText;
+    const quantidade = document.getElementById("quantidade").value;
+    localStorage.setItem("pedidoTotal", total);
+    localStorage.setItem("pedidoQuantidade", quantidade);
+    window.location.href = "checkout.html";
+});

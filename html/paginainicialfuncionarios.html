@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel do Funcionário | Gráfica HolliDay</title>
+<link rel="stylesheet" href="/css/paginainicialfuncionarios.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Gráfica HolliDay</h1>
+    <p>Painel do Funcionário</p>
+</header>
+
+<main class="container">
+
+    <section id="selecionarFuncao">
+        <h2>Selecione sua Função</h2>
+        <div class="grid-funcoes" id="listaFuncoes"></div>
+    </section>
+
+    <section id="painelPedidos" class="hidden">
+        <h2 id="tituloFuncao"></h2>
+
+        <div class="filtros">
+            <button onclick="filtrarPedidos('pendente')">Pendentes</button>
+            <button onclick="filtrarPedidos('andamento')">Em Andamento</button>
+            <button onclick="filtrarPedidos('finalizado')">Finalizados</button>
+        </div>
+
+        <div id="listaPedidos" class="grid-pedidos"></div>
+
+        <button class="btn-voltar" onclick="voltarFuncoes()">Voltar</button>
+    </section>
+
+</main>
+
+<script src="/javascript/paginainicialfuncionarios.js"></script>
+</body>
+</html>
