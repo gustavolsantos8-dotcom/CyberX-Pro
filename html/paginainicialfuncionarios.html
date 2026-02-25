@@ -22,7 +22,11 @@
     </section>
 
     <section id="painelPedidos" class="hidden">
-        <h2 id="tituloFuncao"></h2>
+
+        <div class="topo-painel">
+            <h2 id="tituloFuncao"></h2>
+            <button class="btn-voltar" onclick="voltarFuncoes()">Trocar Função</button>
+        </div>
 
         <div class="filtros">
             <button onclick="filtrarPedidos('pendente')">Pendentes</button>
@@ -32,11 +36,9 @@
 
         <div id="listaPedidos" class="grid-pedidos"></div>
 
-        <button class="btn-voltar" onclick="voltarFuncoes()">Voltar</button>
     </section>
 
 </main>
-
 <script src="/javascript/paginainicialfuncionarios.js"></script>
 </body>
 </html>
