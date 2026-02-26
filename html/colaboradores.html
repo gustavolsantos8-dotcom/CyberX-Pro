@@ -4,19 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Colaboradores - Gráfica HolliDay</title>
-<link rel="stylesheet" href="/css/informaçõesdoscolaboradores.css">
+<link rel="stylesheet" href="/css/">
 </head>
 <body>
 
 <header>
     <h1>Colaboradores - Gráfica HolliDay</h1>
-    <p>Selecione a função para visualizar os funcionários</p>
+
+    <button id="btnCadastrar" class="btn-cadastrar">
+        Cadastrar Funcionário
+    </button>
+
+    <input type="text" id="barraPesquisa" placeholder="🔎 Pesquisar por nome..." class="barra-pesquisa">
 </header>
 
-<section class="funcoes-container" id="funcoesContainer"></section>
+<section id="formContainer" class="form-container oculto">
+    <h2 id="tituloForm">Novo Funcionário</h2>
 
+    <select id="cargoSelect"></select>
+
+    <input type="text" id="nome" placeholder="Nome completo">
+    <input type="date" id="nascimento">
+    <input type="text" id="cpf" placeholder="CPF">
+    <input type="text" id="telefone" placeholder="Telefone">
+
+    <input type="file" id="foto" accept="image/*">
+
+    <img id="previewFoto" class="preview-img">
+
+    <button id="salvarFuncionario" class="btn-salvar">
+        Salvar
+    </button>
+</section>
+
+<section class="funcoes-container" id="funcoesContainer"></section>
 <section class="funcionarios-container" id="funcionariosContainer"></section>
 
-<script src="../javascript/informaçõesdoscolaboradores.js"></script>
+<script src="/javascript/informaçõesdoscolaboradores.js"></script>
 </body>
 </html>
