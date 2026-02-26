@@ -78,6 +78,7 @@ function renderPedidos(){
             ${pedido.fim ? "Finalizado: " + pedido.fim + "<br>" : ""}
         `;
 
+        // PENDENTE
         if(pedido.status === "pendente"){
             const btn = document.createElement("button");
             btn.innerText = "Iniciar Etapa";
@@ -86,12 +87,26 @@ function renderPedidos(){
             div.appendChild(btn);
         }
 
+        // ANDAMENTO
         if(pedido.status === "andamento"){
             const btn = document.createElement("button");
             btn.innerText = "Finalizar Etapa";
             btn.classList.add("btn-acao", "btn-finalizar");
             btn.onclick = () => finalizarPedido(pedido.id);
             div.appendChild(btn);
+        }
+
+        // ✅ FINALIZADO → MOSTRAR BOTÃO RELATÓRIO
+        if(pedido.status === "finalizado"){
+            const btnRelatorio = document.createElement("button");
+            btnRelatorio.innerText = "RELATÓRIO";
+            btnRelatorio.classList.add("btn-acao");
+            btnRelatorio.style.background = "#16a085";
+            btnRelatorio.style.marginTop = "10px";
+
+            btnRelatorio.onclick = () => gerarRelatorio(pedido);
+
+            div.appendChild(btnRelatorio);
         }
 
         lista.appendChild(div);
@@ -110,6 +125,18 @@ function finalizarPedido(id){
     pedido.status = "finalizado";
     pedido.fim = new Date().toLocaleTimeString();
     renderPedidos();
+}
+
+// 🔥 FUNÇÃO RELATÓRIO
+function gerarRelatorio(pedido){
+    alert(
+        "RELATÓRIO DO PEDIDO\n\n" +
+        "Pedido: #" + pedido.id + "\n" +
+        "Cliente: " + pedido.cliente + "\n" +
+        "Área: " + pedido.area + "\n" +
+        "Início: " + pedido.inicio + "\n" +
+        "Finalizado: " + pedido.fim
+    );
 }
 
 function voltarFuncoes(){

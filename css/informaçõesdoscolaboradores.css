@@ -6,8 +6,9 @@
 }
 
 body {
-    background: #0f172a;
+    background: linear-gradient(135deg, #003f3f, #014d4d, #016666);
     color: white;
+    min-height: 100vh;
 }
 
 header {
@@ -16,8 +17,54 @@ header {
 }
 
 header h1 {
-    color: #00c2ff;
     margin-bottom: 10px;
+}
+
+.btn-cadastrar {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #00b3a4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+    background: #00d1c1;
+}
+
+.form-container {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-container input,
+.form-container select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-salvar {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #00b3a4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.oculto {
+    display: none;
 }
 
 .funcoes-container {
@@ -30,16 +77,16 @@ header h1 {
 .funcao-btn {
     padding: 18px;
     border-radius: 12px;
-    border: 1px solid #00c2ff;
+    border: 1px solid #00b3a4;
     background: rgba(255,255,255,0.05);
     color: white;
     cursor: pointer;
-    transition: 0.3s;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .funcao-btn:hover {
-    background: #00c2ff;
+    background: #00b3a4;
     transform: translateY(-5px);
 }
 
@@ -51,14 +98,49 @@ header h1 {
 }
 
 .funcionario-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid #1e293b;
+    background: rgba(255,255,255,0.07);
     padding: 20px;
     border-radius: 15px;
-    backdrop-filter: blur(8px);
+}
+.barra-pesquisa {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 250px;
 }
 
-.funcionario-card h3 {
-    color: #00c2ff;
+.preview-img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.funcionario-card img {
+    width: 15%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.btn-editar {
+    background: #f39c12;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-excluir {
+    background: #c0392b;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
 }
