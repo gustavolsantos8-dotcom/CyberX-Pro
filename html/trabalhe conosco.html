@@ -95,15 +95,18 @@
             <textarea placeholder="Escreva sua mensagem aqui..."></textarea>
         </div>
 
-        <label>Salário Pretendido</label>
-        <input type="number" id="Salário" placeholder="Digite o Salário Pretendido" min="0" required>
+        <label for="salario">Salário Pretendido</label>
+        <input type="number" id="salario" placeholder="Digite o Salário Pretendido" min="0" required>
 
-       
-        <input type="file" id="arquivo" alue="Procurar Arquivo">
-        <h6> Enviar Arquivo (doc | docx | pdf | jpg ) (Max: 5MB):</h6>
-        <input type="submit">
+       <label for="arquivo">
+        <input type="file" id="arquivo" value="procurar arquivo">
+        Enviar Arquivo (doc | docx | pdf | jpg ) (Max: 5MB):
+       </label>
+        
+    
+        <input type="submit" value="Enviar formulário">
     </form>
-    <script src="/javascript/trabalhe.js"></script>
+    <script src="../javascript/trabalhe.js"></script>
 </body>
 
 </html>

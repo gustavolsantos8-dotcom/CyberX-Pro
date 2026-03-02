@@ -62,7 +62,7 @@ select:focus {
 
 
 #arquivo{
-    color: #16305c;
+    color: #002463;
 }
 
 
@@ -187,9 +187,7 @@ button:hover {
     background-color: #16305c;
 }
 
-#arquivo {
-    display: none;
-}
+
 
 .upload-box small {
     display: block;
