@@ -1,6 +1,6 @@
-let dadosFuncionarios = [];
+let dadosFuncionarios = JSON.parse(localStorage.getItem("funcionarios")) || [];
 let funcaoAtual = null;
-let editandoIndex = null;
+let editandoId = null;
 
 const funcoesContainer = document.getElementById("funcoesContainer");
 const funcionariosContainer = document.getElementById("funcionariosContainer");
@@ -17,7 +17,35 @@ const funcoesFixas = [
 "Atendente","Orçamentista","Motoboy","Faxineira"
 ];
 
+
+if(dadosFuncionarios.length === 0){
+    dadosFuncionarios = [
+        {
+            id: Date.now(),
+            nome: "Carlos Silva",
+            cargo: "Arte Finalista",
+            nascimento: "1995-06-10",
+            cpf: "000.000.000-00",
+            telefone: "(79) 99999-0000",
+            foto: ""
+        },
+        {
+            id: Date.now()+1,
+            nome: "Fernanda Oliveira",
+            cargo: "Consultor de Vendas",
+            nascimento: "1992-03-22",
+            cpf: "111.111.111-11",
+            telefone: "(79) 98888-0000",
+            foto: ""
+        }
+    ];
+
+    salvarLocalStorage();
+}
+
+
 funcoesFixas.forEach(funcao => {
+
     const btn = document.createElement("button");
     btn.classList.add("funcao-btn");
     btn.innerText = funcao;
@@ -37,6 +65,7 @@ funcoesFixas.forEach(funcao => {
 
 document.getElementById("btnCadastrar").onclick = () => {
     limparFormulario();
+    editandoId = null;
     formContainer.classList.toggle("oculto");
 };
 
@@ -48,9 +77,11 @@ document.getElementById("foto").addEventListener("change", function(){
     reader.readAsDataURL(this.files[0]);
 });
 
+
 document.getElementById("salvarFuncionario").onclick = () => {
 
     const funcionario = {
+        id: editandoId || Date.now(),
         nome: nome.value,
         cargo: cargoSelect.value,
         nascimento: nascimento.value,
@@ -59,18 +90,23 @@ document.getElementById("salvarFuncionario").onclick = () => {
         foto: previewFoto.src || ""
     };
 
-    if(editandoIndex !== null){
-        dadosFuncionarios[editandoIndex] = funcionario;
-        editandoIndex = null;
+    if(editandoId){
+        const index = dadosFuncionarios.findIndex(f => f.id === editandoId);
+        dadosFuncionarios[index] = funcionario;
     } else {
         dadosFuncionarios.push(funcionario);
     }
 
+    salvarLocalStorage();
     formContainer.classList.add("oculto");
-    mostrarFuncionarios(funcaoAtual);
+
+    if(funcaoAtual){
+        mostrarFuncionarios(funcaoAtual);
+    }
 };
 
 function mostrarFuncionarios(funcao){
+
     funcionariosContainer.innerHTML = "";
 
     let filtrados = dadosFuncionarios.filter(f => f.cargo === funcao);
@@ -78,7 +114,8 @@ function mostrarFuncionarios(funcao){
     const termo = barraPesquisa.value.toLowerCase();
     filtrados = filtrados.filter(f => f.nome.toLowerCase().includes(termo));
 
-    filtrados.forEach((funcionario, index) => {
+    filtrados.forEach(funcionario => {
+
         const card = document.createElement("div");
         card.classList.add("funcionario-card");
 
@@ -89,23 +126,31 @@ function mostrarFuncionarios(funcao){
             <p><strong>Nascimento:</strong> ${funcionario.nascimento}</p>
             <p><strong>CPF:</strong> ${funcionario.cpf}</p>
             <p><strong>Telefone:</strong> ${funcionario.telefone}</p>
-            <button class="btn-editar" onclick="editarFuncionario(${index})">Editar</button>
-            <button class="btn-excluir" onclick="excluirFuncionario(${index})">Excluir</button>
+            <button class="btn-editar">Editar</button>
+            <button class="btn-excluir">Excluir</button>
         `;
+
+        card.querySelector(".btn-editar").onclick = () => editarFuncionario(funcionario.id);
+        card.querySelector(".btn-excluir").onclick = () => excluirFuncionario(funcionario.id);
 
         funcionariosContainer.appendChild(card);
     });
 }
 
-function excluirFuncionario(index){
+
+function excluirFuncionario(id){
     if(confirm("Deseja excluir este funcionário?")){
-        dadosFuncionarios.splice(index,1);
+        dadosFuncionarios = dadosFuncionarios.filter(f => f.id !== id);
+        salvarLocalStorage();
         mostrarFuncionarios(funcaoAtual);
     }
 }
 
-function editarFuncionario(index){
-    const f = dadosFuncionarios[index];
+
+function editarFuncionario(id){
+
+    const f = dadosFuncionarios.find(f => f.id === id);
+
     nome.value = f.nome;
     cargoSelect.value = f.cargo;
     nascimento.value = f.nascimento;
@@ -113,7 +158,7 @@ function editarFuncionario(index){
     telefone.value = f.telefone;
     previewFoto.src = f.foto;
 
-    editandoIndex = index;
+    editandoId = id;
     formContainer.classList.remove("oculto");
 }
 
@@ -130,3 +175,6 @@ barraPesquisa.addEventListener("input", () => {
         mostrarFuncionarios(funcaoAtual);
     }
 });
+function salvarLocalStorage(){
+    localStorage.setItem("funcionarios", JSON.stringify(dadosFuncionarios));
+}
