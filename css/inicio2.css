@@ -50,6 +50,7 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
+    
 }
 
 .card {
@@ -89,6 +90,21 @@ section h2 {
 
 .card a:hover {
     background-color: #0097a7;
+}
+
+.card img {
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid #007c91;
+    padding: 3px;        
+}
+
+
+
+.card a {
+    margin-top: 10px;
+    display: block;
 }
 
 .info ul {
@@ -180,7 +196,7 @@ footer {
 }
 
 
-.botoes-topo{
+.botoes-top{
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -188,7 +204,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.btn-topo{
+.btn-top{
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 10px;
@@ -205,3 +221,4 @@ footer {
 #mensagem{
     color: black;
 }
+

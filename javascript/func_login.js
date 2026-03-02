@@ -1,16 +1,19 @@
-function logar(){
-    const emailDigitado = document.getElementById("email").value;
-    const senhaDigitada = document.getElementById("senha").value;
+const form = document.getElementById('formulario');
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
     const mensagem = document.getElementById("mensagem");
 
-    if(emailDigitado === email && senhaDigitada === 12345678){
+    
+    if (email === "funcionario@teste.com" && senha === "12345678") {
         mensagem.style.color = "green";
-        mensagem.innerHTML = "Login realizado com sucesso!";
-
-      
-    }
-    else{
+        alert("Login concluído ✅")
+        window.location.href = "paginainicialfuncionarios.html"
+    } 
+    else {
         mensagem.style.color = "red";
-        mensagem.innerHTML = "Email ou senha incorretos";
+        mensagem.innerHTML = "❌ Email ou senha incorretos";
     }
-}
+});
