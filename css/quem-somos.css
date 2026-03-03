@@ -219,7 +219,7 @@ h1 {
     }
 }
 
-/* ================== SEÇÃO INSTITUCIONAL ================== */
+
 
 .institucional {
     background-color: #002f3d; /* Verde petróleo igual ao fundo */
@@ -299,7 +299,7 @@ h1 {
         font-size: 20px;
     }
 }
-/* ================== DEPOIMENTOS ================== */
+
 
 .depoimentos {
     padding: 100px 8%;
@@ -367,4 +367,26 @@ h1 {
     font-size: 14px;
     color: #333;
     line-height: 1.6;
+}
+
+.voltar {
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    width: 100px;
+    margin-left: 50px; 
+    margin-top: 20px;
+    
+}
+
+.voltar:hover {
+    background: #1f3f7a;
+    color: white;
 }
