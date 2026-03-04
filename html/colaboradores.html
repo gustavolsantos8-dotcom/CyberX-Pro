@@ -10,12 +10,16 @@
 
 <header>
     <h1>Colaboradores - Gráfica HolliDay</h1>
+    <button class="btn-voltar" onclick="voltarPagina()">
+    Voltar
+</button>   
 
     <button id="btnCadastrar" class="btn-cadastrar">
         Cadastrar Funcionário
     </button>
 
     <input type="text" id="barraPesquisa" placeholder="🔎 Pesquisar por nome..." class="barra-pesquisa">
+    
 </header>
 
 <section id="formContainer" class="form-container oculto">
@@ -41,5 +45,10 @@
 <section class="funcionarios-container" id="funcionariosContainer"></section>
 
 <script src="/javascript/informaçõesdoscolaboradores.js"></script>
+<script>
+function voltarPagina() {
+    window.history.back();
+}
+</script>
 </body>
 </html>
