@@ -2,44 +2,74 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Painel Funcionários - Gráfica HolliDay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Gerencial - Gráfica HolliDay</title>
     <link rel="stylesheet" href="/css/funcionarios.css">
 </head>
 <body>
 
-<header>
-    <h1>Painel Interno - Gráfica HolliDay</h1>  
+<header class="header">
+    <div class="header-content">
+        <div>
+            <h1>Gráfica HolliDay -
+                Painel Gerencial
+            </h1>
+        
+        </div>
+
+        <button class="btn-cadastrar" onclick="irParaColaboradores()">
+            Cadastrar Novo Funcionário  
+        </button>
+    </div>
+    <button class="btn-voltar" onclick="voltarPagina()">
+    Voltar
+</button>
 </header>
 
-<section class="selecao-area">
-    <h2>Selecione o setor desejado:</h2>
+<main class="container">
 
-    <select id="areaSelect">
-        <option value="">-- Escolha sua área --</option>
-        <option value="Impressão Offset">Impressão Offset</option>
-        <option value="Cortador">Cortador</option>
-        <option value="Brochurista">Brochurista</option>
-        <option value="Operador de Corte e Vinco">Operador de Corte e Vinco</option>
-        <option value="Analista de PCP">Analista de PCP</option>
-        <option value="Arte Finalista">Arte Finalista</option>
-        <option value="Supervisor de Arte Finalista">Supervisor de Arte Finalista</option>
-        <option value="Auxiliar Financeiro">Auxiliar Financeiro</option>
-        <option value="Supervisor Financeiro">Supervisor Financeiro</option>
-        <option value="Supervisor Comercial">Supervisor Comercial</option>
-        <option value="Consultor de Vendas">Consultor de Vendas</option>
-        <option value="Atendente">Atendente</option>
-        <option value="Orçamentista">Orçamentista</option>
-        <option value="Motoboy">Motoboy</option>
-        <option value="Faxineira">Faxineira</option>
-    </select>
-</section>
+    <section class="card">
+        <h2>Selecione o setor desejado</h2>
 
-<section class="clientes-section">
-    <h2>Clientes da Sua Área</h2>
-    <div class="clientes-container" id="clientesContainer">
-    </div>
-</section>
+        <select id="areaSelect" class="select-area">
+            <option value="">-- Escolha sua área --</option>
+            <option value="Impressão Offset">Impressão Offset</option>
+            <option value="Cortador">Cortador</option>
+            <option value="Brochurista">Brochurista</option>
+            <option value="Operador de Corte e Vinco">Operador de Corte e Vinco</option>
+            <option value="Analista de PCP">Analista de PCP</option>
+            <option value="Arte Finalista">Arte Finalista</option>
+            <option value="Supervisor de Arte Finalista">Supervisor de Arte Finalista</option>
+            <option value="Auxiliar Financeiro">Auxiliar Financeiro</option>
+            <option value="Supervisor Financeiro">Supervisor Financeiro</option>
+            <option value="Supervisor Comercial">Supervisor Comercial</option>
+            <option value="Consultor de Vendas">Consultor de Vendas</option>
+            <option value="Atendente">Atendente</option>
+            <option value="Orçamentista">Orçamentista</option>
+            <option value="Motoboy">Motoboy</option>
+            <option value="Faxineira">Faxineira</option>
+        </select>
+    </section>
+
+    <section class="card">
+        <h2>Clientes da Sua Área</h2>
+        <div class="clientes-container" id="clientesContainer"></div>
+    </section>
+ 
+</main>
+
+<script>
+function irParaColaboradores() {
+    window.location.href = "colaboradores.html";
+}
+</script>
 
 <script src="/javascript/funcionarios.js"></script>
+
+<script>
+function voltarPagina() {
+    window.history.back();
+}
+</script>
 </body>
 </html>
