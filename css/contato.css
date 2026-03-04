@@ -6,6 +6,15 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f4f6f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #002f3d 0%,
+        #004f5f 35%,
+        #008b9a 70%,
+        #f4f6f8 100%
+    );
+    min-height: 100vh;
 }
 .contato {
     padding: 60px 8%;
@@ -100,17 +109,7 @@ h1 {
     transform: translateY(0);
 }
 
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(
-        135deg,
-        #002f3d 0%,
-        #004f5f 35%,
-        #008b9a 70%,
-        #f4f6f8 100%
-    );
-    min-height: 100vh;
-}
+
 .card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);

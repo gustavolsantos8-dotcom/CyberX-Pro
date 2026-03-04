@@ -1,22 +1,31 @@
-function logar(){
-    const emailDigitado = document.getElementById("email").value;
-    const senhaDigitada = document.getElementById("senha").value;
+const form = document.getElementById('formulario');
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
     const mensagem = document.getElementById("mensagem");
 
-    const usuario = JSON.parse(localStorage.getItem("usuario"));
-
- 
-
-    if(emailDigitado === usuario.email && senhaDigitada === usuario.senha){
+    
+    if (email === "cliente@teste.com" && senha === "12345678") {
         mensagem.style.color = "green";
-        mensagem.innerHTML = "Login realizado com sucesso!";
-
-        setTimeout(()=>{
-            window.location.href = "index.html"; 
-        },1000);
-    }
-    else{
+        alert("Login concluído ✅")
+        window.location.href = "paginainicialfuncionarios.html"
+    } 
+        
+    else {
+        const mensagem = document.getElementById("mensagem");
         mensagem.style.color = "red";
-        mensagem.innerHTML = "Email ou senha incorretos";
+        mensagem.innerHTML = "❌ Email ou senha incorretos";
+        
+           
+
+            mensagem.style.display = 'block';
+        
+            
+            setTimeout(() => {
+                mensagem.style.display = 'none';
+            }, 3000);
+        
     }
-}
+});
