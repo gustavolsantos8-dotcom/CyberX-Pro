@@ -2,7 +2,7 @@ const logado = localStorage.getItem("usuarioLogado");
 const tipo = localStorage.getItem("tipoUsuario");
 
 if(!logado){
-    window.location.href = "login.html";
+    window.location.href = "CyberX Proinicio2.html";
 }
 
 const btnPerfil = document.getElementById("btnPerfil");
@@ -17,4 +17,5 @@ document.addEventListener("click", function(event) {
         menuPerfil.style.display = "none";
     }
 });
+
 

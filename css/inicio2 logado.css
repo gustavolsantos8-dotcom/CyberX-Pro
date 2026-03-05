@@ -177,7 +177,7 @@ footer {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.menu-usuario a {
+.menu-usuario a{
     display: block;
     width: 100%;
     margin-top: 8px;
@@ -190,7 +190,9 @@ footer {
     cursor: pointer;
 }
 
-
+#sair {
+    background: #e53935;
+}
 
 
 .botoes-top{
@@ -219,3 +221,6 @@ footer {
     color: black;
 }
 
+#info{
+    color: black;
+}

@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #9CDCFE, #007c91);
+    background: #002f3d;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -57,13 +57,23 @@ input:focus {
 }
  
 
-.formulario .cadastro{
-    transition: 0.3s;
+.cadastro{
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:600;
+    color:white;
+    font-size:16px;
+    background:#007c91;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    margin-top:10px;
+    transition:0.3s;
 }
 
 .cadastro:hover {
-    background: white;
-    color: #1e3c72;
+  background:#1e3c72;
 }
 
 #mensagem {
@@ -73,17 +83,16 @@ input:focus {
 }
 
 .voltar {
-    display: inline-block;
-    text-decoration: none;
-    background: transparent;
-    border: 2px solid #1e3c72;
-    color: #1e3c72;
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
-    margin-bottom: 15px;
-    width: 100px;
+    display:inline-block;
+    text-decoration:none;
+    border:2px solid #000000;
+    color:#ffffff;
+    background: #007c91;
+    padding:6px 14px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+    margin-bottom:15px;
     
 }
 

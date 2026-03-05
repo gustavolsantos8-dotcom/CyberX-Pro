@@ -16,8 +16,8 @@ if (nome === ""   || telefone === "") {
     } 
      else {
         mensagem.style.color = "green";
-        alert.innerHTML = "✅ Cadastro realizado com sucesso!";
-        window.location.href = "login.html"
+        alert("✅ Cadastro realizado com sucesso!")  
+        window.location.href = "cli_login.html"
     }
 
 });
