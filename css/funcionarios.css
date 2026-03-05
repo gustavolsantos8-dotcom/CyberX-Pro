@@ -102,7 +102,13 @@ body {
     
 }
 
+<<<<<<< HEAD
 .voltar:hover {
     background: #1f3f7a;
     color: white;
+=======
+.btn-voltar:hover {
+    background: #495057;
+    transform: scale(1.05);
+>>>>>>> 402b0b680e772d9a1ef13e4620483ea6b4146c80
 }
