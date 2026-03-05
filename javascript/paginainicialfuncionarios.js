@@ -1,145 +1,161 @@
-const funcoes = [
-"Impressor Offset",
-"Cortador",
-"Brochurista",
-"Operador de Corte e Vinco",
-"Analista de PCP",
-"Arte Finalista",
-"Supervisor de Arte Finalista",
-"Auxiliar Financeiro",
-"Supervisor Financeiro",
-"Supervisor Comercial",
-"Consultor de Vendas",
-"Atendente",
-"Orçamentista",
-"Motoboy",
-"Faxineira"
+const setores = ["Atendimento", "Design", "Impressão", "Acabamento", "Entrega"];
+
+let setorAtual = "";
+let pedidos = [
+    {
+        id: 1,
+        cliente: "Maria Silva",
+        produto: "Cartão de Visita",
+        descricao: "500 unidades, papel couchê 300g, frente e verso, acabamento fosco.",
+        status: "pendente",
+        setor: "Atendimento"
+    },
+    {
+        id: 2,
+        cliente: "João Souza",
+        produto: "Banner 1x1",
+        descricao: "Banner em lona com ilhós nas 4 pontas, arte enviada pelo cliente.",
+        status: "andamento",
+        setor: "Design"
+    },
+    {
+        id: 3,
+        cliente: "Empresa X",
+        produto: "1000 Panfletos",
+        descricao: "Panfletos coloridos, tamanho A5, papel 90g.",
+        status: "pendente",
+        setor: "Impressão"
+    },
+    {
+        id: 4,
+        cliente: "Clínica Vida",
+        produto: "Receituário",
+        descricao: "Bloco com 100 folhas, impressão preto e branco.",
+        status: "finalizado",
+        setor: "Acabamento"
+    },
+    {
+        id: 5,
+        cliente: "Mercadinho Bom Preço",
+        produto: "Faixa Promocional",
+        descricao: "Faixa 3 metros, lona reforçada, arte criada pela gráfica.",
+        status: "pendente",
+        setor: "Atendimento"
+    },
+    {
+        id: 6,
+        cliente: "Escola Futuro",
+        produto: "Blocos Personalizados",
+        descricao: "200 blocos A6 com logotipo da escola.",
+        status: "andamento",
+        setor: "Design"
+    },
+    {
+        id: 7,
+        cliente: "Loja Bella",
+        produto: "Adesivos",
+        descricao: "Adesivos redondos 5cm, impressão colorida.",
+        status: "pendente",
+        setor: "Impressão"
+    },
+    {
+        id: 8,
+        cliente: "Advocacia Santos",
+        produto: "Envelope Timbrado",
+        descricao: "Envelope tamanho A4 com logo e dados do escritório.",
+        status: "andamento",
+        setor: "Acabamento"
+    }
 ];
-
-const pedidos = [
-{ id: 101, cliente: "Empresa Alpha", area: "Impressor Offset", status: "pendente", inicio: null, fim: null },
-{ id: 102, cliente: "Cliente João", area: "Cortador", status: "pendente", inicio: null, fim: null },
-{ id: 103, cliente: "Loja Beta", area: "Arte Finalista", status: "pendente", inicio: null, fim: null }
-];
-
-let funcaoAtual = "";
-let filtroAtual = "pendente";
-
 const listaFuncoes = document.getElementById("listaFuncoes");
 
-funcoes.forEach(funcao => {
-    const div = document.createElement("div");
-    div.classList.add("card-funcao");
-    div.innerText = funcao;
-    div.onclick = () => selecionarFuncao(funcao);
-    listaFuncoes.appendChild(div);
+setores.forEach(setor => {
+    const btn = document.createElement("button");
+    btn.classList.add("btn-setor");
+    btn.innerText = setor;
+    btn.onclick = () => abrirSetor(setor);
+    listaFuncoes.appendChild(btn);
 });
 
-function selecionarFuncao(funcao){
-    funcaoAtual = funcao;
-
+function abrirSetor(setor) {
+    setorAtual = setor;
     document.getElementById("selecionarFuncao").classList.add("hidden");
     document.getElementById("painelPedidos").classList.remove("hidden");
-
-    document.getElementById("tituloFuncao").innerText = "Área: " + funcao;
-
-    filtrarPedidos("pendente");
+    document.getElementById("tituloFuncao").innerText = "Setor: " + setor;
+    mostrarPedidos();
 }
 
-function filtrarPedidos(status){
-    filtroAtual = status;
-    renderPedidos();
+function voltarFuncoes() {
+    document.getElementById("selecionarFuncao").classList.remove("hidden");
+    document.getElementById("painelPedidos").classList.add("hidden");
 }
 
-function renderPedidos(){
-
+function mostrarPedidos() {
     const lista = document.getElementById("listaPedidos");
     lista.innerHTML = "";
 
-    const filtrados = pedidos.filter(p =>
-        p.area === funcaoAtual && p.status === filtroAtual
-    );
+    pedidos
+        .filter(p => p.setor === setorAtual)
+        .forEach(pedido => {
 
-    if(filtrados.length === 0){
-        lista.innerHTML = "<p>Nenhum pedido encontrado.</p>";
-        return;
-    }
+            const card = document.createElement("div");
+            card.classList.add("card-pedido");
 
-    filtrados.forEach(pedido => {
+         card.innerHTML = `
+    <h3>${pedido.produto}</h3>
+    <p><strong>Cliente:</strong> ${pedido.cliente}</p>
+    <p><strong>Status:</strong> ${pedido.status}</p>
+    <p><strong>Descrição:</strong> ${pedido.descricao}</p>
 
-        const div = document.createElement("div");
-        div.classList.add("card-pedido", "status-" + pedido.status);
+                <select onchange="mudarSetor(${pedido.id}, this.value)">
+                    <option value="">Levar para outro setor</option>
+                    ${setores
+                        .filter(s => s !== setorAtual)
+                        .map(s => `<option value="${s}">${s}</option>`)
+                        .join("")}
+                </select>
+            `;
 
-        div.innerHTML = `
-            <strong>Pedido #${pedido.id}</strong><br>
-            Cliente: ${pedido.cliente}<br>
-            Status: ${pedido.status.toUpperCase()}<br>
-            ${pedido.inicio ? "Início: " + pedido.inicio + "<br>" : ""}
-            ${pedido.fim ? "Finalizado: " + pedido.fim + "<br>" : ""}
-        `;
-
-        // PENDENTE
-        if(pedido.status === "pendente"){
-            const btn = document.createElement("button");
-            btn.innerText = "Iniciar Etapa";
-            btn.classList.add("btn-acao", "btn-iniciar");
-            btn.onclick = () => iniciarPedido(pedido.id);
-            div.appendChild(btn);
-        }
-
-        // ANDAMENTO
-        if(pedido.status === "andamento"){
-            const btn = document.createElement("button");
-            btn.innerText = "Finalizar Etapa";
-            btn.classList.add("btn-acao", "btn-finalizar");
-            btn.onclick = () => finalizarPedido(pedido.id);
-            div.appendChild(btn);
-        }
-
-        // ✅ FINALIZADO → MOSTRAR BOTÃO RELATÓRIO
-        if(pedido.status === "finalizado"){
-            const btnRelatorio = document.createElement("button");
-            btnRelatorio.innerText = "RELATÓRIO";
-            btnRelatorio.classList.add("btn-acao");
-            btnRelatorio.style.background = "#16a085";
-            btnRelatorio.style.marginTop = "10px";
-
-            btnRelatorio.onclick = () => gerarRelatorio(pedido);
-
-            div.appendChild(btnRelatorio);
-        }
-
-        lista.appendChild(div);
-    });
+            lista.appendChild(card);
+        });
 }
 
-function iniciarPedido(id){
+function mudarSetor(id, novoSetor) {
+    if(!novoSetor) return;
+
     const pedido = pedidos.find(p => p.id === id);
-    pedido.status = "andamento";
-    pedido.inicio = new Date().toLocaleTimeString();
-    renderPedidos();
+    pedido.setor = novoSetor;
+
+    alert("Pedido enviado para o setor de " + novoSetor);
+    mostrarPedidos();
 }
 
-function finalizarPedido(id){
-    const pedido = pedidos.find(p => p.id === id);
-    pedido.status = "finalizado";
-    pedido.fim = new Date().toLocaleTimeString();
-    renderPedidos();
-}
+function filtrarPedidos(status) {
+    const lista = document.getElementById("listaPedidos");
+    lista.innerHTML = "";
 
-// 🔥 FUNÇÃO RELATÓRIO
-function gerarRelatorio(pedido){
-    alert(
-        "RELATÓRIO DO PEDIDO\n\n" +
-        "Pedido: #" + pedido.id + "\n" +
-        "Cliente: " + pedido.cliente + "\n" +
-        "Área: " + pedido.area + "\n" +
-        "Início: " + pedido.inicio + "\n" +
-        "Finalizado: " + pedido.fim
-    );
-}
+    pedidos
+        .filter(p => p.setor === setorAtual && p.status === status)
+        .forEach(pedido => {
 
-function voltarFuncoes(){
-    document.getElementById("painelPedidos").classList.add("hidden");
-    document.getElementById("selecionarFuncao").classList.remove("hidden");
+            const card = document.createElement("div");
+            card.classList.add("card-pedido");
+
+       card.innerHTML = `
+    <h3>${pedido.produto}</h3>
+    <p><strong>Cliente:</strong> ${pedido.cliente}</p>
+    <p><strong>Status:</strong> ${pedido.status}</p>
+    <p><strong>Descrição:</strong> ${pedido.descricao}</p>
+
+                <select onchange="mudarSetor(${pedido.id}, this.value)">
+                    <option value="">Levar para outro setor</option>
+                    ${setores
+                        .filter(s => s !== setorAtual)
+                        .map(s => `<option value="${s}">${s}</option>`)
+                        .join("")}
+                </select>
+            `;
+
+            lista.appendChild(card);
+        });
 }
