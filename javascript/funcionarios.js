@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const clientes = [
         { nome: "João Silva", servico: "Cartões", area: "Arte Finalista", status: "Pendente" },
-        { nome: "Maria Oliveira", servico: "Banner", area: "Impressão Offset", status: "Producao" },
-        { nome: "Carlos Santos", servico: "Panfletos", area: "Cortador", status: "Producao" },
+        { nome: "Maria Oliveira", servico: "Banner", area: "Impressão Offset", status: "Em Produção" },
+        { nome: "Carlos Santos", servico: "Panfletos", area: "Cortador", status: " Em Produção" },
         { nome: "Empresa XPTO", servico: "Revista", area: "Brochurista", status: "Pendente" },
         { nome: "Loja Central", servico: "Orçamento Folder", area: "Orçamentista", status: "Finalizado" },
-        { nome: "Entrega Local", servico: "Distribuição", area: "Motoboy", status: "Producao" }
+        { nome: "Entrega Local", servico: "Distribuição", area: "Motoboy", status: " Em Produção" }
     ];
 
     const select = document.getElementById("areaSelect");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const clientesFiltrados = clientes.filter(cliente => cliente.area === areaSelecionada);
 
         if (clientesFiltrados.length === 0) {
-            container.innerHTML = "<p>Nenhum cliente nesta área.</p>";
+            container.innerHTML = "<p> Sem pedidos no momento.</p>";
             return;
         }
 
@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
             card.innerHTML = `
                 <h3>${cliente.nome}</h3>
                 <p><strong>Serviço:</strong> ${cliente.servico}</p>
-                <div class="status ${cliente.status}">
-                    ${cliente.status.toUpperCase()}
-                </div>
+                <p><strong>Status:</strong> ${cliente.status}</p>
+                    
+                
             `;
 
             container.appendChild(card);

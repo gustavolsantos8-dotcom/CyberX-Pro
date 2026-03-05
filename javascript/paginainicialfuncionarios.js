@@ -7,7 +7,7 @@ let pedidos = [
         cliente: "Maria Silva",
         produto: "Cartão de Visita",
         descricao: "500 unidades, papel couchê 300g, frente e verso, acabamento fosco.",
-        status: "pendente",
+        status: "Pendente",
         setor: "Atendimento"
     },
     {
@@ -15,15 +15,15 @@ let pedidos = [
         cliente: "João Souza",
         produto: "Banner 1x1",
         descricao: "Banner em lona com ilhós nas 4 pontas, arte enviada pelo cliente.",
-        status: "andamento",
+        status: "Andamento",
         setor: "Design"
     },
     {
         id: 3,
-        cliente: "Empresa X",
+        cliente: "Panificadora Dois Irmãos",
         produto: "1000 Panfletos",
         descricao: "Panfletos coloridos, tamanho A5, papel 90g.",
-        status: "pendente",
+        status: "Andamento",
         setor: "Impressão"
     },
     {
@@ -31,7 +31,7 @@ let pedidos = [
         cliente: "Clínica Vida",
         produto: "Receituário",
         descricao: "Bloco com 100 folhas, impressão preto e branco.",
-        status: "finalizado",
+        status: "Finalizado",
         setor: "Acabamento"
     },
     {
@@ -39,7 +39,7 @@ let pedidos = [
         cliente: "Mercadinho Bom Preço",
         produto: "Faixa Promocional",
         descricao: "Faixa 3 metros, lona reforçada, arte criada pela gráfica.",
-        status: "pendente",
+        status: "Pendente",
         setor: "Atendimento"
     },
     {
@@ -47,7 +47,7 @@ let pedidos = [
         cliente: "Escola Futuro",
         produto: "Blocos Personalizados",
         descricao: "200 blocos A6 com logotipo da escola.",
-        status: "andamento",
+        status: "Andamento",
         setor: "Design"
     },
     {
@@ -55,7 +55,7 @@ let pedidos = [
         cliente: "Loja Bella",
         produto: "Adesivos",
         descricao: "Adesivos redondos 5cm, impressão colorida.",
-        status: "pendente",
+        status: "Andamento",
         setor: "Impressão"
     },
     {
@@ -63,7 +63,7 @@ let pedidos = [
         cliente: "Advocacia Santos",
         produto: "Envelope Timbrado",
         descricao: "Envelope tamanho A4 com logo e dados do escritório.",
-        status: "andamento",
+        status: "Andamento",
         setor: "Acabamento"
     }
 ];

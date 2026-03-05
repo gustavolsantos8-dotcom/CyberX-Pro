@@ -16,6 +16,7 @@ if (pedido) {
 
 btnConfirmar.addEventListener("click", () => {
     mensagemFinal.textContent = "Pedido confirmado com sucesso! A Gráfica HolliDay entrará em contato.";
+    
 });
 
 window.onload = function() {

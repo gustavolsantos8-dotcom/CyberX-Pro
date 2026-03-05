@@ -24,7 +24,7 @@ if(dadosFuncionarios.length === 0){
             id: Date.now(),
             nome: "Carlos Silva",
             cargo: "Arte Finalista",
-            nascimento: "1995-06-10",
+            nascimento: "1995/06/10",
             cpf: "000.000.000-00",
             telefone: "(79) 99999-0000",
             foto: ""
@@ -33,7 +33,7 @@ if(dadosFuncionarios.length === 0){
             id: Date.now()+1,
             nome: "Fernanda Oliveira",
             cargo: "Consultor de Vendas",
-            nascimento: "1992-03-22",
+            nascimento: "1992/03/22",
             cpf: "111.111.111-11",
             telefone: "(79) 98888-0000",
             foto: ""
