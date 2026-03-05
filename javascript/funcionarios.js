@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const clientes = [
-        { nome: "João Silva", servico: "Cartões", area: "Arte Finalista", status: "pendente" },
-        { nome: "Maria Oliveira", servico: "Banner", area: "Impressão Offset", status: "producao" },
-        { nome: "Carlos Santos", servico: "Panfletos", area: "Cortador", status: "producao" },
-        { nome: "Empresa XPTO", servico: "Revista", area: "Brochurista", status: "pendente" },
-        { nome: "Loja Central", servico: "Orçamento Folder", area: "Orçamentista", status: "finalizado" },
-        { nome: "Entrega Local", servico: "Distribuição", area: "Motoboy", status: "producao" }
+        { nome: "João Silva", servico: "Cartões", area: "Arte Finalista", status: "Pendente" },
+        { nome: "Maria Oliveira", servico: "Banner", area: "Impressão Offset", status: "Producao" },
+        { nome: "Carlos Santos", servico: "Panfletos", area: "Cortador", status: "Producao" },
+        { nome: "Empresa XPTO", servico: "Revista", area: "Brochurista", status: "Pendente" },
+        { nome: "Loja Central", servico: "Orçamento Folder", area: "Orçamentista", status: "Finalizado" },
+        { nome: "Entrega Local", servico: "Distribuição", area: "Motoboy", status: "Producao" }
     ];
 
     const select = document.getElementById("areaSelect");

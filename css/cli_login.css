@@ -21,7 +21,7 @@ h1{
     margin-bottom:20px;
 }
 
-/* organiza todos elementos do formulário */
+
 #formulario{
     display:flex;
     flex-direction:column;
@@ -86,7 +86,7 @@ input{
     margin-top:8px;
     align-self:flex-start;
     transition:0.3s;
-    text-align: center;
+    align-items: center;
 }
 
 #funcionario:hover{

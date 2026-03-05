@@ -40,6 +40,7 @@ input, select {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn-confirmar:hover {
@@ -50,4 +51,24 @@ input, select {
     margin-top: 20px;
     font-weight: bold;
     color: green;
+}
+
+.voltar{
+    display:inline-block;
+    text-decoration:none;
+    border:2px solid #000000;
+    color:#ffffff;
+    background: #0f3d3e;
+    padding:6px 14px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+    margin-bottom:15px;
+     margin-top:30px;     /* mais para baixo */
+    align-self:flex-start;
+}
+
+.voltar:hover{
+    background:#1e3c72;
+    
 }
