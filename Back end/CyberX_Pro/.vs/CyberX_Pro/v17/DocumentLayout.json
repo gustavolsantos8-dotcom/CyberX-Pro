@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\github\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\github\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\data\\cyberxcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\data\\cyberxcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\github\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\clientescontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\clientescontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\github\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CyberXContext.cs",
+              "DocumentMoniker": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\CyberXContext.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Data\\CyberXContext.cs",
+              "ToolTip": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\CyberXContext.cs",
+              "RelativeToolTip": "CyberX_Pro\\Data\\CyberXContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:52:57.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Program.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Program.cs",
+              "ToolTip": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Program.cs",
+              "RelativeToolTip": "CyberX_Pro\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:36:06.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Clientes.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Clientes.cs",
+              "ToolTip": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Clientes.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Clientes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:25:49.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientesControllers.cs",
+              "DocumentMoniker": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesControllers.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ClientesControllers.cs",
+              "ToolTip": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesControllers.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\ClientesControllers.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAA0wBcAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:23:49.548Z",
+              "EditorCaption": ""
             }
           ]
         }

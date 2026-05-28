@@ -1,0 +1,87 @@
+[
+  {
+    "ContainingType": "CyberX_Pro.Controllers.ClientesControllers",
+    "Method": "CadastraCliente",
+    "RelativePath": "ClientesControllers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "CyberX_Pro.Models.Clientes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CyberX_Pro.Controllers.ClientesControllers",
+    "Method": "RetornaCliente",
+    "RelativePath": "ClientesControllers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CyberX_Pro.Controllers.ClientesControllers",
+    "Method": "AtualizaCliente",
+    "RelativePath": "ClientesControllers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "CyberX_Pro.Models.Clientes",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CyberX_Pro.Controllers.ClientesControllers",
+    "Method": "DeletaCliente",
+    "RelativePath": "ClientesControllers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CyberX_Pro.Controllers.ClientesControllers",
+    "Method": "Login",
+    "RelativePath": "ClientesControllers/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "CyberX_Pro.Models.Clientes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
