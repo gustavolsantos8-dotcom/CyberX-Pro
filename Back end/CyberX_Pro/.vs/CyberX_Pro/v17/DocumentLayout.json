@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pedidos.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Pedidos.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Pedidos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T18:00:43.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Funcionarios.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Funcionarios.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Funcionarios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T18:00:04.55Z",
+              "EditorCaption": ""
             }
           ]
         }
