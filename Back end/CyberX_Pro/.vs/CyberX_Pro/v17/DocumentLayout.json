@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\Clara\\CyberX-Pro\\Back end\\CyberX_Pro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\clara\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\clara\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\clara\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\cyberx_pro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\cyberx_pro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CyberX_Pro",
+              "DocumentMoniker": "E:\\Clara\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\CyberX_Pro.csproj",
+              "RelativeDocumentMoniker": "CyberX_Pro\\CyberX_Pro.csproj",
+              "ToolTip": "E:\\Clara\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\CyberX_Pro.csproj",
+              "RelativeToolTip": "CyberX_Pro\\CyberX_Pro.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-28T17:28:50.949Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "E:\\Clara\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "ToolTip": "E:\\Clara\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:25:39.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "E:\\Clara\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Produtos.cs",
+              "ToolTip": "E:\\Clara\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Produtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:24:41.061Z",
+              "EditorCaption": ""
             }
           ]
         }
