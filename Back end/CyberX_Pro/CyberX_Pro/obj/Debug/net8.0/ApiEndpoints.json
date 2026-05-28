@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "Atividade_07_05.Controllers.SetorController",
+    "Method": "Get",
+    "RelativePath": "Setor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Atividade_07_05.Controllers.SetorController",
+    "Method": "Post",
+    "RelativePath": "Setor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "setor",
+        "Type": "CyberX_Pro.Models.Setores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Atividade_07_05.Controllers.SetorController",
+    "Method": "Put",
+    "RelativePath": "Setor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "setorAtualizado",
+        "Type": "CyberX_Pro.Models.Setores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Atividade_07_05.Controllers.SetorController",
+    "Method": "Delete",
+    "RelativePath": "Setor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
