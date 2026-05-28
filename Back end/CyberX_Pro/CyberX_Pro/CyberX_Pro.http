@@ -1,0 +1,6 @@
+@CyberX_Pro_HostAddress = http://localhost:5115
+
+GET {{CyberX_Pro_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
