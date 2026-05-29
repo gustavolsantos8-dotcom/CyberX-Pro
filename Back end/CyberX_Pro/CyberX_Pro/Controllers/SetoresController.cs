@@ -1,21 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CyberX_Pro.Data;
 using CyberX_Pro.Models;
+
 namespace CyberX_Pro.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-
-
     public class SetorController : ControllerBase
     {
-        private readonly GerencialContext _context;
-
-        public SetoresController(GerencialContext context)
-        {
-            _context = context;
-        }
-
         private static List<Setores> setores = new List<Setores>();
 
         [HttpGet]
@@ -39,7 +30,7 @@ namespace CyberX_Pro.Controllers
             if (setor == null)
                 return NotFound();
 
-            setor.NomedeSetor = setorAtualizado.NomedeSetor;
+            setor.NomeDoSetor = setorAtualizado.NomeDoSetor;
 
             return Ok(setor);
         }
