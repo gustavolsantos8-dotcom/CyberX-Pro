@@ -2,10 +2,9 @@
 {
     public class Produtos
     {
-
-        public decimal Id { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
-        public decimal ValorDoProduto { get; set; }
+        public decimal Valor_Do_Produto { get; set; }
     }
 }
 

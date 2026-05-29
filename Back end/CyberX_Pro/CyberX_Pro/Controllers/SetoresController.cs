@@ -1,12 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using CyberX_Pro.Data;
 using CyberX_Pro.Models;
-
-namespace Atividade_07_05.Controllers
+namespace CyberX_Pro.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+
+
     public class SetorController : ControllerBase
     {
+        private readonly GerencialContext _context;
+
+        public SetoresController(GerencialContext context)
+        {
+            _context = context;
+        }
+
         private static List<Setores> setores = new List<Setores>();
 
         [HttpGet]

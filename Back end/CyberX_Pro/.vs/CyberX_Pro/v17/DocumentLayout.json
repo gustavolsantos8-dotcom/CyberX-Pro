@@ -1,22 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\",
+  "WorkspaceRootPath": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\github\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\github\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\data\\cyberxcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\data\\cyberxcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\github\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\clientescontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\clientescontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\clientescontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\github\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\funcionarios_dos_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\funcionarios_dos_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\setores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\setores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\produtos_dos_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\produtos_dos_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\setorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\setorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\project\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\data\\gerencialcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\data\\gerencialcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +70,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Funcionarios_dos_Pedidos.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:37:33.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientesControllers.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesControllers.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ClientesControllers.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesControllers.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\ClientesControllers.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:23:49.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FuncionariosController.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\FuncionariosController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\FuncionariosController.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\FuncionariosController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\FuncionariosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:13:53.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Funcionarios.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Funcionarios.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Funcionarios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:38:07.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Clientes.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Clientes.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Clientes.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Clientes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:25:49.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Setores.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Setores.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Setores.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Setores.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Setores.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:33:40.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pedidos.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Pedidos.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Pedidos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:35:36.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Produtos_dos_Pedidos.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos_dos_Pedidos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Produtos_dos_Pedidos.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos_dos_Pedidos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Produtos_dos_Pedidos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:38:04.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Produtos.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Produtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:41:24.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\PedidosController.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\PedidosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:13:20.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SetoresController.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\SetoresController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\SetoresController.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\SetoresController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\SetoresController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:13:40.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:12:03.893Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CyberXContext.cs",
-              "DocumentMoniker": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\CyberXContext.cs",
-              "RelativeDocumentMoniker": "CyberX_Pro\\Data\\CyberXContext.cs",
-              "ToolTip": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\CyberXContext.cs",
-              "RelativeToolTip": "CyberX_Pro\\Data\\CyberXContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T17:52:57.962Z",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\appsettings.json",
+              "RelativeDocumentMoniker": "CyberX_Pro\\appsettings.json",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\appsettings.json",
+              "RelativeToolTip": "CyberX_Pro\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-29T17:24:48.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Program.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Program.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Program.cs",
-              "ToolTip": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Program.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Program.cs",
               "RelativeToolTip": "CyberX_Pro\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,28 +260,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Clientes.cs",
-              "DocumentMoniker": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Clientes.cs",
-              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Clientes.cs",
-              "ToolTip": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Clientes.cs",
-              "RelativeToolTip": "CyberX_Pro\\Models\\Clientes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "DocumentIndex": 14,
+              "Title": "GerencialContext.cs",
+              "DocumentMoniker": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\GerencialContext.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Data\\GerencialContext.cs",
+              "ToolTip": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\GerencialContext.cs",
+              "RelativeToolTip": "CyberX_Pro\\Data\\GerencialContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T17:25:49.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClientesControllers.cs",
-              "DocumentMoniker": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesControllers.cs",
-              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ClientesControllers.cs",
-              "ToolTip": "E:\\GitHub\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesControllers.cs",
-              "RelativeToolTip": "CyberX_Pro\\Controllers\\ClientesControllers.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAA0wBcAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T17:23:49.548Z",
+              "WhenOpened": "2026-05-28T17:52:57.962Z",
               "EditorCaption": ""
             }
           ]

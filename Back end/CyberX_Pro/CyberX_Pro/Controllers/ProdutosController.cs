@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using CyberX_Pro.Data;
+using CyberX_Pro.Models;
 namespace CyberX_Pro.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class ProdutosController : ControllerBase
     {
-        private readonly GerenciaContext _context;
+        private readonly GerencialContext _context;
 
-        public ProdutosController(GerenciaContext context)
+        public ProdutosController(GerencialContext context)
         {
             _context = context;
         }

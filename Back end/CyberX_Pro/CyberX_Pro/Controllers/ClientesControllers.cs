@@ -1,15 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using CyberX_Pro.Data;
 using CyberX_Pro.Models;
-using SistemaTarefas.Data;
 namespace CyberX_Pro.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class ClientesControllers : ControllerBase 
     {
-       private readonly CyberXContext _context;
-        public ClientesControllers(CyberXContext context)
+       private readonly GerencialContext _context;
+        public ClientesControllers(GerencialContext context)
         {
             _context = context;
         }
@@ -18,7 +17,7 @@ namespace CyberX_Pro.Controllers
         [HttpGet("{id}")]
         public IActionResult RetornaCliente(int id)
         {
-            var clientes = _context.Cliente.Find(id);
+            var clientes = _context.Clientes.Find(id);
             if (clientes == null)
             {
                 return NotFound("Não há clientes com esse Id!");
@@ -37,7 +36,7 @@ namespace CyberX_Pro.Controllers
         [HttpPut("{id}")]
         public IActionResult AtualizaCliente(Clientes cliente)
         {
-            var clienteDoBanco = _context.Cliente.Find("IdCliente");
+            var clienteDoBanco = _context.Clientes.Find("IdCliente");
             if (clienteDoBanco == null)
             {
                 return NotFound("Cliente não existe no banco!");
@@ -52,7 +51,7 @@ namespace CyberX_Pro.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeletaCliente(int id)
         {
-            var clienteDoBanco = _context.Cliente.Find(id);
+            var clienteDoBanco = _context.Clientes.Find(id);
             if (clienteDoBanco == null)
             {
                 return NotFound("Não encontrado!");
@@ -65,7 +64,7 @@ namespace CyberX_Pro.Controllers
         [HttpPost("login")]
         public IActionResult Login(Clientes cliente)
         {
-            var clientes = _context.Cliente
+            var clientes = _context.Clientes
                  .Where(c => c.Email.Equals(cliente.Email) &&
               c.Senha.Equals(cliente.Senha)).ToList();
             if (!clientes.Any())

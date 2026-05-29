@@ -143,3 +143,14 @@ E:\GitHub\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\refint\Cybe
 E:\GitHub\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.pdb
 E:\GitHub\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.genruntimeconfig.cache
 E:\GitHub\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\ref\CyberX_Pro.dll
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.csproj.AssemblyReference.cache
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.AssemblyInfoInputs.cache
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.AssemblyInfo.cs
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.csproj.CoreCompileInputs.cache
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.MvcApplicationPartsAssemblyInfo.cs
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.MvcApplicationPartsAssemblyInfo.cache
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.sourcelink.json
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.dll
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\refint\CyberX_Pro.dll
+E:\Project\CyberX-Pro\Back end\CyberX_Pro\CyberX_Pro\obj\Debug\net8.0\CyberX_Pro.pdb

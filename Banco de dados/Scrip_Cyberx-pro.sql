@@ -6,25 +6,25 @@ GO
 /* Lógico_CyberX-Pro: */
 
 CREATE TABLE Cliente (
-    Id INTEGER PRIMARY KEY,
+    Id INTEGER IDENTITY PRIMARY KEY,
     Nome VARCHAR(40),
     Email VARCHAR(40),
     Senha VARCHAR(20)
 );
 
 CREATE TABLE Produtos (
-    Id INTEGER PRIMARY KEY,
+    Id INTEGER IDENTITY PRIMARY KEY,
     Nome VARCHAR(40),
     Valor_Do_Produto DECIMAL
 );
 
 CREATE TABLE Setores (
-    Identificador INTEGER PRIMARY KEY,
+    Identificador IDENTITY INTEGER PRIMARY KEY,
     Nome_de_Setor VARCHAR(40)
 );
 
 CREATE TABLE Funcionarios (
-    Id INTEGER PRIMARY KEY,
+    Id INTEGER IDENTITY PRIMARY KEY,
     Email VARCHAR(40),
     Nome VARCHAR(40),
     Tipo VARCHAR(30),
@@ -35,7 +35,7 @@ CREATE TABLE Funcionarios (
 );
 
 CREATE TABLE Pedido (
-    Id INTEGER PRIMARY KEY,
+    Id INTEGER IDENTITY PRIMARY KEY,
     Valor DECIMAL,
     fk_Cliente_Cpf INTEGER,
     fk_Setores_Identificador INTEGER
@@ -55,7 +55,7 @@ CREATE TABLE Produtos_Do_Pedido (
 ALTER TABLE Funcionarios ADD CONSTRAINT FK_Funcionarios_2
     FOREIGN KEY (fk_Setores_Identificador)
     REFERENCES Setores (Identificador)
-    ON DELETE RESTRICT;
+    ON DELETE NO ACTION;
  
 ALTER TABLE Pedido ADD CONSTRAINT FK_Pedido_2
     FOREIGN KEY (fk_Cliente_Cpf)
