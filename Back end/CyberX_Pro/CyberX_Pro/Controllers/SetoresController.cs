@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CyberX_Pro.Models;
 
-namespace Atividade_07_05.Controllers
+namespace CyberX_Pro.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -30,7 +30,7 @@ namespace Atividade_07_05.Controllers
             if (setor == null)
                 return NotFound();
 
-            setor.NomedeSetor = setorAtualizado.NomedeSetor;
+            setor.NomeDoSetor = setorAtualizado.NomeDoSetor;
 
             return Ok(setor);
         }

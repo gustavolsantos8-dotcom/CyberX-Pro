@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SistemaTarefas.Data;
+using CyberX_Pro.Models;
 
 namespace CyberX_Pro.Controllers
 {
@@ -6,9 +8,9 @@ namespace CyberX_Pro.Controllers
     [Route("[controller]")]
     public class ProdutosController : ControllerBase
     {
-        private readonly GerenciaContext _context;
+        private readonly CyberXContext _context;
 
-        public ProdutosController(GerenciaContext context)
+        public ProdutosController(CyberXContext context)
         {
             _context = context;
         }
@@ -23,7 +25,7 @@ namespace CyberX_Pro.Controllers
             }
             var idprodutosLogado = Request.Cookies["IdLogado"];
             if (idprodutosLogado != null)
-                produtos.IdClientes = int.Parse(idProdutosLogado);
+                produtos.Idclientes = int.Parse(idprodutosLogado);
 
             _context.Add(produtos);
             _context.SaveChanges();
