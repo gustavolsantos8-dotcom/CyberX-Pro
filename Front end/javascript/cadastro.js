@@ -1,26 +1,27 @@
-const form = document.getElementById('formulario');
-form.addEventListener("submit", function(event) {
+const myForm = document.getElementById('cadastroCliente');
+
+myForm.addEventListener('submit', function (event) {
+    // 1. Prevenir o recarregamento da página ao submeter form
     event.preventDefault();
-    const nome = document.getElementById("nome").value;
-    const email = document.getElementById("email").value;
-    const telefone = document.getElementById("telefone").value;
-    const senha = document.getElementById("senha").value;
-    const senha2 = document.getElementById("senha2").value;
-    const mensagem = document.getElementById("mensagem");
-if (nome === ""   || telefone === "") {
-        mensagem.style.color = "red";
-        mensagem.innerHTML = "⚠️ Preencha todos os campos!";
-    } else if(senha2 != senha){
-        mensagem.style.color = "red";
-        mensagem.innerHTML = "❌ As senhas não coincidem"; 
-    } 
-     else {
-        mensagem.style.color = "green";
-        alert("✅ Cadastro realizado com sucesso!")  
-        window.location.href = "cli_login.html"
-    }
 
+    fetch('https://localhost:7266/Cliente', {
+        method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
+            
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            nome: document.getElementById("Nome").value,
+            email: document.getElementById("Email").value,
+            telefone: document.getElementById("Telefone").value,
+            senha: document.getElementById("Senha").value
+        }),
+    }).then(response => {response.json()
+
+        alert("Cadastro feito com sucesso!")
+        window.location.href = "../html/cli_login.html";
+    }  )
+        .then(data => {
+            +"Seu ID gerado foi: "+data.id+"</h4>";        
+        })
 });
-
-    
-

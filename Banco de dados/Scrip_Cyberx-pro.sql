@@ -9,7 +9,8 @@ CREATE TABLE Cliente (
     Id INTEGER IDENTITY PRIMARY KEY,
     Nome VARCHAR(40),
     Email VARCHAR(40),
-    Senha VARCHAR(20)
+    Senha VARCHAR(20),
+    Telefone VARCHAR(40)
 );
 
 CREATE TABLE Produtos (
@@ -19,7 +20,7 @@ CREATE TABLE Produtos (
 );
 
 CREATE TABLE Setores (
-    Identificador IDENTITY INTEGER PRIMARY KEY,
+    Identificador INTEGER IDENTITY  PRIMARY KEY,
     Nome_de_Setor VARCHAR(40)
 );
 

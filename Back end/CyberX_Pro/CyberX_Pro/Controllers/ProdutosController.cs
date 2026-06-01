@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SistemaTarefas.Data;
+using CyberX_Pro.Data;
 using CyberX_Pro.Models;
 
 namespace CyberX_Pro.Controllers
@@ -8,9 +8,9 @@ namespace CyberX_Pro.Controllers
     [Route("[controller]")]
     public class ProdutosController : ControllerBase
     {
-        private readonly CyberXContext _context;
+        private readonly GerencialContext _context;
 
-        public ProdutosController(CyberXContext context)
+        public ProdutosController(GerencialContext context)
         {
             _context = context;
         }
@@ -25,7 +25,7 @@ namespace CyberX_Pro.Controllers
             }
             var idprodutosLogado = Request.Cookies["IdLogado"];
             if (idprodutosLogado != null)
-                produtos.Idclientes = int.Parse(idprodutosLogado);
+                produtos.Id = int.Parse(idprodutosLogado);
 
             _context.Add(produtos);
             _context.SaveChanges();
@@ -59,7 +59,7 @@ namespace CyberX_Pro.Controllers
                 return Unauthorized("Faça login antes!");
             }
 
-            var produtoDoBanco = _context.Tarefas.Find(id);
+            var produtoDoBanco = _context.Produtos.Find(id);
             if (produtoDoBanco == null)
             {
                 return NotFound("Produto não existe no banco!");
