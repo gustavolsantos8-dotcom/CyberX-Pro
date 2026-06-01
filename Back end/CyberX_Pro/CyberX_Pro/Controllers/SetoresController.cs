@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CyberX_Pro.Models;
 
-namespace CyberX_Pro.Controllers
+namespace CyberX_Pro.Controller
 {
     [ApiController]
     [Route("[controller]")]
@@ -22,10 +22,10 @@ namespace CyberX_Pro.Controllers
             return Ok(setor);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{Id}")]
         public IActionResult Put(int id, Setores setorAtualizado)
         {
-            var setor = setores.FirstOrDefault(s => s.Identificador == id);
+            var setor = setores.FirstOrDefault(s => s.Id == id);
 
             if (setor == null)
                 return NotFound();
@@ -38,7 +38,7 @@ namespace CyberX_Pro.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var setor = setores.FirstOrDefault(s => s.Identificador == id);
+            var setor = setores.FirstOrDefault(s => s.Id == id);
 
             if (setor == null)
                 return NotFound();

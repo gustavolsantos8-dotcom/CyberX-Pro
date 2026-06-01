@@ -2,7 +2,7 @@
 {
     public class Setores
     {
-        public int Identificador { get; set; }
+        public int Id { get; set; }
 
         public string NomeDoSetor { get; set; }
     }

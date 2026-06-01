@@ -4,7 +4,7 @@ myForm.addEventListener('submit', function (event) {
     // 1. Prevenir o recarregamento da página ao submeter form
     event.preventDefault();
 
-    fetch('https://localhost:7266/Cliente', {
+    fetch('https://localhost:7266/Clientes', {
         method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
             
         headers: {
@@ -17,11 +17,9 @@ myForm.addEventListener('submit', function (event) {
             senha: document.getElementById("Senha").value
         }),
     }).then(response => {response.json()
-
-        alert("Cadastro feito com sucesso!")
-        window.location.href = "../html/cli_login.html";
+       
     }  )
         .then(data => {
-            +"Seu ID gerado foi: "+data.id+"</h4>";        
+                 alert("Cadastro feito com sucesso!")
         })
 });

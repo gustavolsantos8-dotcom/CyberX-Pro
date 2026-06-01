@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CyberX_Pro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+154097871bf16a07d38bda3f1a96821915c9c6b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8055477d93b775aab61d3f89dc890187cf095efa")]
 [assembly: System.Reflection.AssemblyProductAttribute("CyberX_Pro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CyberX_Pro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

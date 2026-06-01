@@ -2,7 +2,7 @@
 using CyberX_Pro.Data;
 using CyberX_Pro.Models;
 
-namespace CyberX_Pro.Controllers
+namespace CyberX_Pro.Controller
 {
     [ApiController]
     [Route("[controller]")]

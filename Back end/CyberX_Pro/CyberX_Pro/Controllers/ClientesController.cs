@@ -5,10 +5,10 @@ namespace CyberX_Pro.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ClientesControllers : ControllerBase 
+    public class ClientesController : ControllerBase 
     {
        private readonly GerencialContext _context;
-        public ClientesControllers(GerencialContext context)
+        public ClientesController(GerencialContext context)
         {
             _context = context;
         }
