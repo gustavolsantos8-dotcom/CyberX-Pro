@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hyF7fP5Tg0sagomFiHgX4QIji4jDcJhZxnopnN4VKE1keSY0Iq2884cyRG8NfM4PlqypqBxjtMWD9asoICHiXw==",
+  "dgSpecHash": "mpXWhMayd/4xR8qVD79KnF0ODX7L/CVyGH7ChgBTIXwYz157BzX8GOs7xI3SESNNylmlyX1VkgerWpZFKrDSRg==",
   "success": true,
-  "projectFilePath": "E:\\Clara\\Back end\\CyberX_Pro\\CyberX_Pro\\CyberX_Pro.csproj",
+  "projectFilePath": "E:\\Project\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\CyberX_Pro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tarde.cetafaju\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\tarde.cetafaju\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

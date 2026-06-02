@@ -1,30 +1,29 @@
-const form = document.getElementById('formulario');
-form.addEventListener("submit", function (event) {
+const myForm = document.getElementById('loginFuncionario');
+
+myForm.addEventListener('submit', function (event) {
+    // 1. Prevenir o recarregamento da página ao submeter form
     event.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const senha = document.getElementById("senha").value;
-    const mensagem = document.getElementById("mensagem");
-
-
-    if (email === "funcionario@teste.com" && senha === "12345678") {
-        mensagem.style.color = "green";
-        alert("Login concluído ✅")
-        window.location.href = "paginainicialfuncionarios.html"
-    }
-
-    else if (email === "gerencia@teste.com" && senha === "12345678") {
-        mensagem.style.color = "green";
-        alert("Login concluído ✅")
-        window.location.href = "gerencia.html"
-    }
-    else {
-        const mensagem = document.getElementById("mensagem");
-        mensagem.style.color = "red";
-        mensagem.innerHTML = "❌ Email ou senha incorretos";
-        mensagem.style.display = 'block';
-        setTimeout(() => {
-            mensagem.style.display = 'none';
-        }, 5000);
-    }
+    fetch('https://localhost:7266/Funcionarios/login', {
+        method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
+            credentials: "include",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            nome: "",
+            email: document.getElementById("email").value,
+            telefone: "",
+            cpf:"",
+            datanasc:"",
+            senha: document.getElementById("senha").value
+        }),
+    }).then(response => {response.json()
+        if (response.status == 401){
+            alert ("Senha ou email incorretos!");
+            }
+    }  )
+        .then(data => {
+                 alert("Login feito com sucesso!")
+        })
 });

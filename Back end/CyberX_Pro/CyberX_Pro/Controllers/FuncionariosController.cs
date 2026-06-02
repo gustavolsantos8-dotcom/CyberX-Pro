@@ -66,14 +66,14 @@ namespace CyberX_Pro.Controller
         public IActionResult Login(Funcionarios funcionario)
         {
             var funcionarios = _context.Funcionarios
-                 .Where(c => c.Email.Equals(funcionario.Email) &&
-              c.Senha.Equals(funcionario.Senha)).ToList();
+                 .Where(f => f.Email.Equals(funcionario.Email) &&
+              f.Senha.Equals(funcionario.Senha)).ToList();
             if (!funcionarios.Any())
             {
                 return Unauthorized("Usuário ou senha Inválidos!");
             }
-            HttpContext.Session.SetString("IdFuncionario", Convert.ToString(funcionarios[0].Id));
-            Response.Cookies.Append("IdFuncionario", funcionarios[0].Id.ToString(),
+            HttpContext.Session.SetString("IdFuncionarios", Convert.ToString(funcionarios[0].Id));
+            Response.Cookies.Append("IdFuncionarios", funcionarios[0].Id.ToString(),
            new CookieOptions
            {
                HttpOnly = true,

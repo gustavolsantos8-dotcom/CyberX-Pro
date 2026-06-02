@@ -15,17 +15,29 @@ namespace CyberX_Pro.Controller
             _context = context;
         }
 
+
+        [HttpGet("{id}")]
+        public IActionResult RetornaProdutos(int id)
+        {
+            var produtos = _context.Produtos.Find(id);
+            if (produtos == null)
+            {
+                return NotFound("Não há produtos com esse Id!");
+            }
+            return Ok(produtos);
+        }
+
         [HttpPost]
         public IActionResult CadastraProdutos(Produtos produtos)
         {
-            var produtosLogado = HttpContext.Session.GetString("IdLogado");
-            if (produtosLogado == null)
+            var produtoslogado = HttpContext.Session.GetString("IdLogado");
+            if (produtoslogado == null)
             {
                 return Unauthorized("Faça login antes!");
             }
-            var idprodutosLogado = Request.Cookies["IdLogado"];
-            if (idprodutosLogado != null)
-                produtos.Id = int.Parse(idprodutosLogado);
+            var idprodutoslogado = Request.Cookies["IdLogado"];
+            if (idprodutoslogado != null)
+                produtos.Id = int.Parse(idprodutoslogado);
 
             _context.Add(produtos);
             _context.SaveChanges();
@@ -35,8 +47,8 @@ namespace CyberX_Pro.Controller
         [HttpDelete]
         public IActionResult DeletaProdutos(int id)
         {
-            var produtosLogado = HttpContext.Session.GetString("ProdutoLogado");
-            if (produtosLogado == null)
+            var produtologado = HttpContext.Session.GetString("ProdutoLogado");
+            if (produtologado == null)
             {
                 return Unauthorized("Faça login antes!");
             }
@@ -53,8 +65,8 @@ namespace CyberX_Pro.Controller
         [HttpPut]
         public IActionResult AtualizaProdutos(int id, Produtos produtos)
         {
-            var usuarioLogado = HttpContext.Session.GetString("IdLogado");
-            if (usuarioLogado == null)
+            var produtoLogado = HttpContext.Session.GetString("IdLogado");
+            if (produtoLogado == null)
             {
                 return Unauthorized("Faça login antes!");
             }

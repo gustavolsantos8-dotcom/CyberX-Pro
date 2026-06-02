@@ -6,7 +6,7 @@ myForm.addEventListener('submit', function (event) {
 
     fetch('https://localhost:7266/Clientes', {
         method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
-            
+            credentials: "include",
         headers: {
             'Content-Type': 'application/json',
         },
@@ -17,7 +17,9 @@ myForm.addEventListener('submit', function (event) {
             senha: document.getElementById("Senha").value
         }),
     }).then(response => {response.json()
-       
+        if (response.status == 401){
+            alert ("Senha ou email incorretos!");
+            }
     }  )
         .then(data => {
                  alert("Cadastro feito com sucesso!")
