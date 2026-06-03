@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #002f3d;
+
+    background: linear-gradient(135deg, #0b3d3d, #0f6b5a, #1a8c72);
 }
 
 .container {
@@ -19,12 +20,12 @@ body {
     border-radius: 12px;
     text-align: center;
     width: 350px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .container h1 {
     margin-bottom: 30px;
-    color: #002f3d;
+    color: #0b4f4f;
 }
 
 .botoes {
@@ -37,7 +38,8 @@ body {
     padding: 12px;
     border: none;
     border-radius: 8px;
-    background-color: #002f3d;
+    background: linear-gradient(135deg, #0b4f4f, #13795b);
+
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -45,6 +47,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #01485d;
+    background: linear-gradient(135deg, #13795b, #1fa37a);
     transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(19, 121, 91, 0.4);
 }

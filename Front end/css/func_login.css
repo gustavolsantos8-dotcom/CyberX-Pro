@@ -4,7 +4,12 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    background:linear-gradient(
+        135deg,
+        #031f1f,
+        #0b4c4c,
+        #148080
+    );
     font-family:Arial;
 }
 
@@ -13,45 +18,54 @@ body{
     padding:40px;
     border-radius:15px;
     width:320px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
 h1{
     text-align:center;
     margin-bottom:20px;
+    color:#0b4c4c;
 }
 
-/* organização do formulário */
 form{
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
-/* campos */
 input{
     width:100%;
     padding:12px;
     margin:6px 0;
     border-radius:8px;
-    border:1px solid #ccc;
+    border:2px solid #0f6666;
     box-sizing:border-box;
-    border:2px solid #000000;
+    transition:0.3s;
 }
 
-/* botão principal */
+input:focus{
+    outline:none;
+    border-color:#148080;
+    box-shadow:0 0 8px rgba(20,128,128,0.4);
+}
+
 #funcao{
     width:100%;
     text-align:center;
     text-decoration:none;
     padding:12px;
     border:none;
-    border:2px solid #000000;
     border-radius:10px;
     font-weight:600;
     color:white;
     font-size:16px;
-    background:#007c91;
+
+    background:linear-gradient(
+        135deg,
+        #0b4c4c,
+        #148080
+    );
+
     box-shadow:0 4px 12px rgba(0,0,0,0.15);
     margin-top:10px;
     cursor:pointer;
@@ -59,30 +73,46 @@ input{
 }
 
 #funcao:hover{
-    background:#1e3c72;
+    background:linear-gradient(
+        135deg,
+        #148080,
+        #1ca88a
+    );
+    transform:translateY(-2px);
 }
 
-/* botão voltar */
 .voltar{
     display:inline-block;
     text-decoration:none;
-    border:2px solid #000000;
+    border:none;
     color:#ffffff;
-    background: #007c91;
+
+    background:linear-gradient(
+        135deg,
+        #062f2f,
+        #0f6666
+    );
+
     padding:6px 14px;
     border-radius:8px;
     font-weight:bold;
     transition:0.3s;
     margin-bottom:15px;
-     margin-top:30px;     /* mais para baixo */
+    margin-top:30px;
     align-self:flex-start;
 }
 
 .voltar:hover{
-    background:#1e3c72;
-    
+    background:linear-gradient(
+        135deg,
+        #0f6666,
+        #148080
+    );
+    transform:scale(1.05);
 }
 
 #mensagem{
     margin-top:10px;
+    color:#0b4c4c;
+    text-align:center;
 }

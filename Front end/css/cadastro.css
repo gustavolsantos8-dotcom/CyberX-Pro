@@ -6,7 +6,16 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #002f3d;
+
+
+    background: linear-gradient(
+        135deg,
+        #031f1f 0%,
+        #0b4c4c 40%,
+        #148080 75%,
+        #1ca88a 100%
+    );
+
     height: 100vh;
     display: flex;
     align-items: center;
@@ -18,19 +27,22 @@ body {
     width: 380px;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+    border-top: 5px solid #148080;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #0b4c4c;
     margin-bottom: 5px;
 }
 
 .subtitulo {
     text-align: center;
     font-size: 14px;
-    color: #777;
+    color: #666;
     margin-bottom: 25px;
 }
 
@@ -38,7 +50,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: 600;
-    color: #444;
+    color: #0b4c4c;
 }
 
 input {
@@ -46,58 +58,83 @@ input {
     padding: 10px;
     margin-bottom: 18px;
     border-radius: 6px;
-    border: 1px solid #000000;
+    border: 2px solid #148080;
     font-size: 14px;
+    transition: 0.3s;
 }
 
 input:focus {
     outline: none;
-    border-color: #00bcd4;
-    box-shadow: 0 0 4px rgba(0, 188, 212, 0.5);
+    border-color: #1ca88a;
+    box-shadow: 0 0 8px rgba(28, 168, 138, 0.4);
 }
- 
 
-.cadastro{
-    width:100%;
-    text-align:center;
-    text-decoration:none;
-    padding:12px;
-    border-radius:10px;
-    font-weight:600;
-    color:white;
-    font-size:16px;
-    background:#007c91;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
-    margin-top:10px;
-    transition:0.3s;
+.cadastro {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        #0b4c4c,
+        #148080
+    );
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
 .cadastro:hover {
-  background:#1e3c72;
+    background: linear-gradient(
+        135deg,
+        #148080,
+        #1ca88a
+    );
+
+    transform: translateY(-2px);
 }
 
 #mensagem {
     text-align: center;
     margin-top: 15px;
     font-weight: bold;
+    color: #0b4c4c;
 }
 
 .voltar {
-    display:inline-block;
-    text-decoration:none;
-    border:2px solid #000000;
-    color:#ffffff;
-    background: #007c91;
-    padding:6px 14px;
-    border-radius:8px;
-    font-weight:bold;
-    transition:0.3s;
-    margin-bottom:15px;
-    
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #062f2f,
+        #0f6666
+    );
+
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    border: none;
 }
 
 .voltar:hover {
-    background: #1e3c72;
+    background: linear-gradient(
+        135deg,
+        #0f6666,
+        #148080
+    );
+
+    transform: scale(1.05);
     color: white;
 }
-

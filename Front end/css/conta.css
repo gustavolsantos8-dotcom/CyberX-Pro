@@ -6,15 +6,37 @@
 
 body{
     font-family:'Segoe UI', Arial, sans-serif;
-    background:#f4f6f8;
+
+
+    background:linear-gradient(
+        135deg,
+        #031f1f 0%,
+        #0b4c4c 45%,
+        #148080 75%,
+        #1ca88a 100%
+    );
+
     color:#333;
+    min-height:100vh;
 }
 
 header{
-    background: linear-gradient(135deg, #00bcd4, #007c91);
+    background:linear-gradient(
+        135deg,
+        #062f2f,
+        #0b4c4c,
+        #148080
+    );
+
     color:white;
     padding:40px 20px;
     text-align:center;
+
+    box-shadow:0 6px 20px rgba(0,0,0,0.25);
+}
+
+header h1{
+    text-shadow:2px 2px 10px rgba(0,0,0,0.3);
 }
 
 .container{
@@ -24,20 +46,32 @@ header{
 }
 
 .perfil-card{
-    background:white;
+    background:rgba(255,255,255,0.97);
+
     padding:30px;
     border-radius:12px;
-    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+
     display:flex;
     gap:30px;
     margin-bottom:40px;
+
+    border-left:6px solid #148080;
 }
 
 .foto-perfil img{
     width:120px;
     border-radius:50%;
-    background:#e0f7fa;
+
+    background:linear-gradient(
+        135deg,
+        #dff7f4,
+        #b7ece6
+    );
+
     padding:10px;
+    border:3px solid #148080;
 }
 
 .dados{
@@ -46,21 +80,31 @@ header{
 
 .dados h2{
     margin-bottom:20px;
-    color:#007c91;
+    color:#0b4c4c;
 }
 
 .dados label{
     display:block;
     margin-top:15px;
     font-weight:600;
+    color:#0b4c4c;
 }
 
 .dados input{
     width:100%;
     padding:10px;
     margin-top:5px;
+
     border-radius:8px;
-    border:1px solid #ccc;
+    border:2px solid #148080;
+
+    transition:0.3s;
+}
+
+.dados input:focus{
+    outline:none;
+    border-color:#1ca88a;
+    box-shadow:0 0 8px rgba(28,168,138,0.4);
 }
 
 .botoes{
@@ -75,29 +119,73 @@ header{
     border-radius:8px;
     cursor:pointer;
     font-weight:600;
-    background:#00bcd4;
     color:white;
+
+    background:linear-gradient(
+        135deg,
+        #0b4c4c,
+        #148080
+    );
+
     transition:0.3s;
 }
 
 .botoes button:hover{
-    background:#0097a7;
+    background:linear-gradient(
+        135deg,
+        #148080,
+        #1ca88a
+    );
+
+    transform:translateY(-2px);
 }
 
 .botoes .sair{
-    background:#e53935;
+    background:linear-gradient(
+        135deg,
+        #7a1f1f,
+        #b33939
+    );
+}
+
+.botoes .sair:hover{
+    background:linear-gradient(
+        135deg,
+        #b33939,
+        #d9534f
+    );
+}
+
+.botoes .voltar{
+    background:linear-gradient(
+        135deg,
+        #062f2f,
+        #0f6666
+    );
+}
+
+.botoes .voltar:hover{
+    background:linear-gradient(
+        135deg,
+        #0f6666,
+        #148080
+    );
 }
 
 .pedidos{
-    background:white;
+    background:rgba(255,255,255,0.97);
+
     padding:25px;
     border-radius:12px;
-    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+
+    border-left:6px solid #148080;
 }
 
 .pedidos h2{
     margin-bottom:15px;
-    color:#007c91;
+    color:#0b4c4c;
 }
 
 .pedidos ul{
@@ -105,15 +193,16 @@ header{
 }
 
 .pedidos li{
-    padding:10px;
-    margin-bottom:8px;
-    background:#e0f7fa;
-    border-radius:6px;
-}
-.botoes .voltar{
-    background:#607d8b;
-}
+    padding:12px;
+    margin-bottom:10px;
 
-.botoes .voltar:hover{
-    background:#455a64;
+    background:linear-gradient(
+        135deg,
+        #dff7f4,
+        #b7ece6
+    );
+
+    border-radius:8px;
+
+    border-left:4px solid #148080;
 }

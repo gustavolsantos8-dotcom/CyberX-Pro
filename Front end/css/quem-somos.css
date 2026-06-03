@@ -1,3 +1,6 @@
+
+/* CSS COMPLETO - Tema Verde Petróleo em Degradê */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +9,13 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #002f3d; /* Verde petróleo padrão */
+    background: linear-gradient(
+        135deg,
+        #031f1f 0%,
+        #0b4c4c 40%,
+        #148080 75%,
+        #1ca88a 100%
+    );
     min-height: 100vh;
 }
 
@@ -38,11 +47,12 @@ h1 {
 .card {
     flex: 1;
     min-width: 320px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255,255,255,0.96);
     backdrop-filter: blur(8px);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border-left: 5px solid #148080;
     transition: 0.3s;
 }
 
@@ -52,13 +62,16 @@ h1 {
 
 .card h3 {
     margin-bottom: 15px;
-    color: #006d6d;
+    color: #0b4c4c;
 }
 
 .processo {
     margin-bottom: 100px;
 }
 
+.processo h2,
+.depoimentos h2,
+.visao360 h2,
 .processo h2 {
     text-align: center;
     color: #ffffff;
@@ -73,7 +86,7 @@ h1 {
 }
 
 .etapa {
-    background: #006d6d;
+    background: linear-gradient(135deg,#0b4c4c,#148080);
     color: white;
     padding: 15px 25px;
     border-radius: 10px;
@@ -82,234 +95,13 @@ h1 {
 }
 
 .etapa:hover {
-    background: #004f4f;
+    background: linear-gradient(135deg,#148080,#1ca88a);
+    transform: translateY(-3px);
 }
-
-/* ================== DEPOIMENTOS ================== */
 
 .depoimentos {
     padding: 100px 8%;
     text-align: center;
-}
-
-.depoimentos h2 {
-    color: #ffffff;
-    font-size: 32px;
-    margin-bottom: 60px;
-}
-
-.carrossel {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card-depoimento {
-    background: #f1f1f1;
-    width: 320px;
-    padding: 30px 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    position: relative;
-    transition: 0.3s ease;
-}
-
-.card-depoimento:hover {
-    transform: translateY(-8px);
-}
-.foto-cliente {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    top: -45px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 4px solid #002f3d;
-    background: #fff;
-}
-.nome-cliente {
-    margin-top: 40px;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.data {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 10px;
-}
-
-.estrelas {
-    color: #fbbf24;
-    margin-bottom: 15px;
-}
-
-.texto-depoimento {
-    font-size: 15px;
-    color: #333;
-    line-height: 1.6;
-}
-/* ================= VISÃO 360 ================= */
-
-.visao360 {
-    margin-top: 100px;
-}
-
-.visao360 h2 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 32px;
-    margin-bottom: 60px;
-    font-weight: 600;
-}
-
-.setor {
-    margin-bottom: 80px;
-}
-
-.setor h3 {
-    color: #ffffff;
-    margin-bottom: 20px;
-    font-weight: 500;
-    padding-left: 5px;
-}
-
-.mapa360 {
-    width: 100%;
-    height: 550px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.35);
-    transition: 0.4s ease;
-}
-
-.mapa360:hover {
-    transform: scale(1.01);
-}
-
-.mapa360 iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* ANIMAÇÃO */
-.animar {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.6s ease;
-}
-
-.animar.ativo {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@media (max-width: 900px) {
-    .container-sobre {
-        flex-direction: column;
-    }
-
-    .linha-processo {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-
-.institucional {
-    background-color: #002f3d; 
-    padding: 80px 10%;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #f1f5f9;
-}
-
-.institucional .container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.institucional .titulo-secao {
-    font-size: 32px;
-    font-weight: 700;
-    color: #14b8a6;
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.institucional .titulo-secao::after {
-    content: "";
-    width: 80px;
-    height: 3px;
-    background: #dc2626;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-}
-
-.institucional h3 {
-    font-size: 22px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.institucional p {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 15px;
-    color: #cbd5e1;
-}
-
-.institucional ul,
-.institucional ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.institucional li {
-    margin-bottom: 8px;
-    font-size: 15px;
-    color: #e2e8f0;
-}
-
-.institucional strong {
-    color: #14b8a6;
-}
-
-.institucional ul li strong {
-    color: #ef4444;
-}
-
-@media (max-width: 768px) {
-    .institucional {
-        padding: 50px 6%;
-    }
-
-    .institucional .titulo-secao {
-        font-size: 26px;
-    }
-
-    .institucional h3 {
-        font-size: 20px;
-    }
-}
-
-
-.depoimentos {
-    padding: 100px 8%;
-    text-align: center;
-}
-
-.depoimentos h2 {
-    color: #ffffff;
-    font-size: 32px;
-    margin-bottom: 60px;
 }
 
 .carrossel {
@@ -320,10 +112,11 @@ h1 {
 }
 
 .card-depoimento {
-    background: #f1f1f1;
+    background: rgba(255,255,255,0.96);
     width: 300px;
     padding: 50px 25px 30px;
     border-radius: 15px;
+    border-top: 5px solid #148080;
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
     position: relative;
     transition: 0.3s ease;
@@ -342,12 +135,7 @@ h1 {
     top: -35px;
     left: 50%;
     transform: translateX(-50%);
-    border: 4px solid #002f3d;
-}
-
-.card-depoimento h3 {
-    margin-top: 20px;
-    font-size: 16px;
+    border: 4px solid #148080;
 }
 
 .data {
@@ -360,33 +148,127 @@ h1 {
 .estrelas {
     color: #fbbf24;
     margin-bottom: 15px;
-    font-size: 18px;
 }
 
-.card-depoimento p {
-    font-size: 14px;
-    color: #333;
-    line-height: 1.6;
+.visao360 {
+    margin-top: 100px;
+}
+
+.setor {
+    margin-bottom: 80px;
+}
+
+.setor h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.mapa360 {
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+}
+
+.mapa360 iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s ease;
+}
+
+.animar.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.institucional {
+    background: linear-gradient(
+        135deg,
+        #031f1f,
+        #062f2f,
+        #0b4c4c
+    );
+    padding: 80px 10%;
+    color: #f1f5f9;
+}
+
+.institucional .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.institucional .titulo-secao {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1ca88a;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.institucional .titulo-secao::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #148080;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.institucional h3 {
+    color: white;
+}
+
+.institucional p,
+.institucional li {
+    color: #dbe7e7;
+}
+
+.institucional strong {
+    color: #1ca88a;
 }
 
 .voltar {
     display: inline-block;
     text-decoration: none;
-    background: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    padding: 6px 14px;
+    background: linear-gradient(135deg,#062f2f,#0f6666);
+    color: #fff;
+    padding: 8px 16px;
     border-radius: 8px;
     font-weight: bold;
     transition: 0.3s;
     margin-bottom: 15px;
     width: 100px;
-    margin-left: 50px; 
+    margin-left: 50px;
     margin-top: 20px;
-    
+    text-align: center;
 }
 
 .voltar:hover {
-    background: #1f3f7a;
-    color: white;
+    background: linear-gradient(135deg,#0f6666,#148080);
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .container-sobre {
+        flex-direction: column;
+    }
+
+    .linha-processo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .institucional {
+        padding: 50px 6%;
+    }
 }
