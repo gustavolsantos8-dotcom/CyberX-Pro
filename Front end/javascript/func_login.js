@@ -6,16 +6,16 @@ myForm.addEventListener('submit', function (event) {
 
     fetch('https://localhost:7266/Funcionarios/login', {
         method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
-            credentials: "include",
+        credentials: "include",
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
             nome: "",
             email: document.getElementById("email").value,
+            cargo:"",
             telefone: "",
             cpf:"",
-            datanasc:"",
             senha: document.getElementById("senha").value
         }),
     }).then(response => {response.json()

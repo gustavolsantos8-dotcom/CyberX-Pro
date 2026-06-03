@@ -85,7 +85,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CyberX_Pro.Controller.FuncionariosController",
+    "ContainingType": "CyberX_Pro.Controllers.FuncionariosController",
     "Method": "CadastraFuncionarios",
     "RelativePath": "Funcionarios",
     "HttpMethod": "POST",
@@ -101,7 +101,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CyberX_Pro.Controller.FuncionariosController",
+    "ContainingType": "CyberX_Pro.Controllers.FuncionariosController",
     "Method": "RetornaFuncionarios",
     "RelativePath": "Funcionarios/{id}",
     "HttpMethod": "GET",
@@ -117,7 +117,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CyberX_Pro.Controller.FuncionariosController",
+    "ContainingType": "CyberX_Pro.Controllers.FuncionariosController",
     "Method": "AtualizaFuncionario",
     "RelativePath": "Funcionarios/{id}",
     "HttpMethod": "PUT",
@@ -138,7 +138,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CyberX_Pro.Controller.FuncionariosController",
+    "ContainingType": "CyberX_Pro.Controllers.FuncionariosController",
     "Method": "DeletaFuncionario",
     "RelativePath": "Funcionarios/{id}",
     "HttpMethod": "DELETE",
@@ -154,7 +154,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CyberX_Pro.Controller.FuncionariosController",
+    "ContainingType": "CyberX_Pro.Controllers.FuncionariosController",
     "Method": "Login",
     "RelativePath": "Funcionarios/login",
     "HttpMethod": "POST",

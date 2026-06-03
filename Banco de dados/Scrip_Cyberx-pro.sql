@@ -28,11 +28,12 @@ CREATE TABLE Funcionarios (
     Id INTEGER IDENTITY PRIMARY KEY,
     Email VARCHAR(40),
     Nome VARCHAR(40),
-    Tipo VARCHAR(30),
+    Cargo VARCHAR(30),
     fk_Setores_Id INTEGER,
     Cpf VARCHAR(12),
     Senha VARCHAR(20),
-    Data_Nascimento DATE
+    Telefone VARCHAR(25),
+    DataNasc DATE
 );
 
 CREATE TABLE Pedidos (
@@ -60,7 +61,7 @@ ALTER TABLE Funcionarios ADD CONSTRAINT FK_Funcionarios_2
     REFERENCES Setores (Id)
     ON DELETE NO ACTION;
  
-/* 🔧 CORRIGIDO AQUI */
+
 ALTER TABLE Pedidos ADD CONSTRAINT FK_Pedidos_2
     FOREIGN KEY (fk_Cliente_Cpf)
     REFERENCES Clientes (Id)

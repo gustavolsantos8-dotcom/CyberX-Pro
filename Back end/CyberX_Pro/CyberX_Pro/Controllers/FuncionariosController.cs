@@ -2,7 +2,7 @@
 using CyberX_Pro.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CyberX_Pro.Controller
+namespace CyberX_Pro.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -45,6 +45,10 @@ namespace CyberX_Pro.Controller
             funcionarioDoBanco.Nome = funcionario.Nome;
             funcionarioDoBanco.Email = funcionario.Email;
             funcionarioDoBanco.Senha = funcionario.Senha;
+            funcionarioDoBanco.Cpf = funcionario.Cpf;
+            funcionarioDoBanco.Cargo = funcionario.Cargo;
+            funcionarioDoBanco.Telefone = funcionario.Telefone;
+            funcionarioDoBanco.DataNasc = funcionario.DataNasc;
             _context.SaveChanges();
             return Ok("Atualizado");
         }
