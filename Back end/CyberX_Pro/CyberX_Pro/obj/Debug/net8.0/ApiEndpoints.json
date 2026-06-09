@@ -170,7 +170,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CyberX_Pro.Controller.ProdutosController",
+    "ContainingType": "CyberX_Pro.Controllers.ProdutosController",
     "Method": "CadastraProdutos",
     "RelativePath": "Produtos",
     "HttpMethod": "POST",
@@ -186,44 +186,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CyberX_Pro.Controller.ProdutosController",
-    "Method": "DeletaProdutos",
-    "RelativePath": "Produtos",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CyberX_Pro.Controller.ProdutosController",
-    "Method": "AtualizaProdutos",
-    "RelativePath": "Produtos",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "produtos",
-        "Type": "CyberX_Pro.Models.Produtos",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CyberX_Pro.Controller.ProdutosController",
+    "ContainingType": "CyberX_Pro.Controllers.ProdutosController",
     "Method": "RetornaProdutos",
     "RelativePath": "Produtos/{id}",
     "HttpMethod": "GET",
@@ -239,8 +202,45 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CyberX_Pro.Controllers.ProdutosController",
+    "Method": "AtualizaProdutos",
+    "RelativePath": "Produtos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "produtos",
+        "Type": "CyberX_Pro.Models.Produtos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CyberX_Pro.Controllers.ProdutosController",
+    "Method": "DeletaProdutos",
+    "RelativePath": "Produtos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CyberX_Pro.Controller.SetorController",
-    "Method": "Get",
+    "Method": "GetSetores",
     "RelativePath": "Setor",
     "HttpMethod": "GET",
     "IsController": true,
@@ -266,24 +266,8 @@
   },
   {
     "ContainingType": "CyberX_Pro.Controller.SetorController",
-    "Method": "Delete",
-    "RelativePath": "Setor/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CyberX_Pro.Controller.SetorController",
     "Method": "Put",
-    "RelativePath": "Setor/{Id}",
+    "RelativePath": "Setor/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -296,6 +280,22 @@
       {
         "Name": "setorAtualizado",
         "Type": "CyberX_Pro.Models.Setores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CyberX_Pro.Controller.SetorController",
+    "Method": "Delete",
+    "RelativePath": "Setor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

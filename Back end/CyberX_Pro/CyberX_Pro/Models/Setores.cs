@@ -3,7 +3,6 @@
     public class Setores
     {
         public int Id { get; set; }
-
-        public string NomeDoSetor { get; set; }
+        public string Nome_de_Setor { get; set; }  // ✅ igual ao banco
     }
 }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setores - HollyDay Gráfica</title>
+    <link rel="stylesheet" href="/css/setores.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-icon">✦</span>
+            <span class="logo-text">HollyDay</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⌂</span> Início
+            </a>
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">◈</span> Setores
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◻</span> Produtos
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◉</span> Clientes
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◎</span> Pedidos
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <span>Gráfica HollyDay © 2025</span>
+        </div>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <h1 class="page-title">Setores</h1>
+                <p class="page-sub">Gerencie os setores da gráfica</p>
+            </div>
+            <div class="topbar-right">
+                <div class="stats-badge">
+                    <span id="totalCount">0</span>
+                    <span class="badge-label">setores cadastrados</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- GRID PRINCIPAL -->
+        <div class="content-grid">
+
+            <!-- CARD CADASTRO -->
+            <section class="card card-form">
+                <div class="card-header">
+                    <h2>Novo Setor</h2>
+                    <p>Informe o nome para cadastrar</p>
+                </div>
+
+                <form id="cadastroSetor">
+                    <div class="field-group">
+                        <label for="nomeSetor">Nome do Setor</label>
+                        <input
+                            type="text"
+                            id="nomeSetor"
+                            placeholder="Ex: Impressão Digital"
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="btnCadastrar">
+                        <span class="btn-icon">+</span> Cadastrar Setor
+                    </button>
+                </form>
+            </section>
+
+            <!-- COLUNA DIREITA -->
+            <div class="right-col">
+                <section class="card card-list">
+                    <div class="card-header">
+                        <h2>Setores Cadastrados</h2>
+                        <div class="search-wrap">
+                            <span class="search-icon">⌕</span>
+                            <input
+                                type="text"
+                                id="pesquisa"
+                                placeholder="Buscar setor..."
+                            />
+                        </div>
+                    </div>
+
+                    <!-- ESTADO VAZIO -->
+                    <div id="emptyState" class="empty-state">
+                        <div class="empty-icon">◈</div>
+                        <p>Nenhum setor cadastrado ainda.</p>
+                        <span>Use o formulário ao lado para começar.</span>
+                    </div>
+
+                    <!-- LOADING -->
+                    <div id="loadingState" class="loading-state hidden">
+                        <div class="spinner"></div>
+                        <p>Carregando setores...</p>
+                    </div>
+
+                    <!-- LISTA -->
+                    <div id="listaSetores" class="lista-setores"></div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODAL DE EDIÇÃO -->
+    <div id="modalEdicao" class="modal-overlay hidden">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Editar Setor</h3>
+                <button class="modal-close" onclick="fecharModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="field-group">
+                    <label>Nome do Setor</label>
+                    <input type="text" id="editNome" placeholder="Nome do setor" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="fecharModal()">Cancelar</button>
+                <button class="btn-primary" onclick="salvarEdicao()">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="/javascript/setores.js"></script>
+</body>
+</html>

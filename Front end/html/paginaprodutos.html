@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produtos - HollyDay</title>
-
     <link rel="stylesheet" href="/css/paginaprdutos.css">
 </head>
 <body>
-<a href="../html/CyberX Proinicio2.html" class="voltar">
-    ← Voltar
-</a>
+
+<a href="../html/CyberX Proinicio2.html" class="voltar">← Voltar</a>
 
 <header>
     <h1>Cadastro de Produtos</h1>
@@ -22,34 +20,37 @@
     <div class="card">
         <h2>Novo Produto</h2>
 
-        <input
-            type="text"
-            id="nomeProduto"
-            placeholder="Digite o nome do produto"
-        >
+        <form id="cadastroProduto">
 
-        <button id="btnCadastrar">
-            Cadastrar Produto
-        </button>
+            <input
+                type="text"
+                id="nomeProduto"
+                placeholder="Digite o nome do produto"
+            />
+
+            <input
+                type="number"
+                id="valorProduto"
+                placeholder="Digite o valor do produto"
+                step="0.01"
+                min="0"
+            />
+
+            <button type="submit" id="btnCadastrar">
+                Cadastrar Produto
+            </button>
+
+        </form>
     </div>
 
     <div class="card">
         <h2>Pesquisar Produto</h2>
-
         <input
             type="text"
             id="pesquisa"
             placeholder="Pesquisar produto..."
-        >
+        />
     </div>
-
-    <div id="listaProdutos" class="produtos"></div>
-
-</div>
-<header>
-
-</header>
-
 
     <div id="listaProdutos" class="produtos"></div>
 

@@ -10,7 +10,7 @@ namespace CyberX_Pro.Controller
         private static List<Setores> setores = new List<Setores>();
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetSetores()
         {
             return Ok(setores);
         }
@@ -19,10 +19,10 @@ namespace CyberX_Pro.Controller
         public IActionResult Post(Setores setor)
         {
             setores.Add(setor);
-            return Ok(setor);
+            return Created("", setor);
         }
 
-        [HttpPut("{Id}")]
+        [HttpPut("{id}")]
         public IActionResult Put(int id, Setores setorAtualizado)
         {
             var setor = setores.FirstOrDefault(s => s.Id == id);
@@ -30,7 +30,7 @@ namespace CyberX_Pro.Controller
             if (setor == null)
                 return NotFound();
 
-            setor.NomeDoSetor = setorAtualizado.NomeDoSetor;
+            setor.Nome_de_Setor = setorAtualizado.Nome_de_Setor;
 
             return Ok(setor);
         }
