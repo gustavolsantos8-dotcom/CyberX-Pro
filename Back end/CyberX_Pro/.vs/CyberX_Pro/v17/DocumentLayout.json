@@ -3,22 +3,65 @@
   "WorkspaceRootPath": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\setorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\setorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\setores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\setores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+<<<<<<< Updated upstream
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+=======
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\produtos_dos_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\produtos_dos_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\funcionarios_dos_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\funcionarios_dos_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\setorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\setorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\data\\gerencialcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\data\\gerencialcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,6 +82,12 @@
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,6 +96,7 @@
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -61,6 +111,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +124,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,6 +140,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "SetoresController.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\SetoresController.cs",
@@ -95,11 +150,87 @@
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T18:13:40.743Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "Funcionarios_dos_Pedidos.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:37:33.334Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 11,
+=======
+              "DocumentIndex": 3,
+              "Title": "FuncionariosController.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\FuncionariosController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\FuncionariosController.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\FuncionariosController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\FuncionariosController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAIwEsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:13:53.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\PedidosController.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\PedidosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:13:20.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ClientesController.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\ClientesController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAkwBkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:23:49.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\ProdutosController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:12:03.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SetoresController.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\SetoresController.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\SetoresController.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\SetoresController.cs",
+              "RelativeToolTip": "CyberX_Pro\\Controllers\\SetoresController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwCgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:13:40.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+>>>>>>> Stashed changes
               "Title": "Funcionarios.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Funcionarios.cs",
@@ -107,8 +238,7 @@
               "RelativeToolTip": "CyberX_Pro\\Models\\Funcionarios.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T18:38:07.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T18:38:07.978Z"
             },
             {
               "$type": "Document",
@@ -164,6 +294,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 8,
               "Title": "ClientesController.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesController.cs",
@@ -173,11 +304,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-28T17:23:49.548Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Setores.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Setores.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Setores.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Setores.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Setores.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:33:40.922Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Produtos_dos_Pedidos.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos_dos_Pedidos.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Produtos_dos_Pedidos.cs",
@@ -190,6 +332,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
               "Title": "Funcionarios_dos_Pedidos.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios_dos_Pedidos.cs",
@@ -230,25 +373,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 10,
+>>>>>>> Stashed changes
               "Title": "GerencialContext.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\GerencialContext.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Data\\GerencialContext.cs",
               "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\GerencialContext.cs",
               "RelativeToolTip": "CyberX_Pro\\Data\\GerencialContext.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-28T17:52:57.962Z",
               "EditorCaption": ""
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:52:57.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Pedidos.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Pedidos.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Pedidos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:35:36.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Clientes.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Clientes.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Clientes.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Clientes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:25:49.411Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+<<<<<<< Updated upstream
               "Title": "FuncionariosController.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\FuncionariosController.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\FuncionariosController.cs",
               "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\FuncionariosController.cs",
               "RelativeToolTip": "CyberX_Pro\\Controllers\\FuncionariosController.cs",
               "ViewState": "AQIAAD0AAAAAAAAAAAAcwEsAAAANAAAA",
+=======
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Program.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Program.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Program.cs",
+              "RelativeToolTip": "CyberX_Pro\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAcAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T18:13:53.396Z",
               "EditorCaption": ""
@@ -256,12 +441,21 @@
             {
               "$type": "Document",
               "DocumentIndex": 14,
+<<<<<<< Updated upstream
               "Title": "Pedidos.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Pedidos.cs",
               "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
               "RelativeToolTip": "CyberX_Pro\\Models\\Pedidos.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+=======
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Produtos.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Produtos.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Produtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T18:35:36.397Z"
             },
