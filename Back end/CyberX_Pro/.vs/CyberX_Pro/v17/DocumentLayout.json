@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\setores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\setores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\setorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +13,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\funcionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\data\\gerencialcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\setores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|solutionrelative:cyberx_pro\\models\\setores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8BCB967-2DA9-4E78-B076-15FA40E6C34C}|CyberX_Pro\\CyberX_Pro.csproj|e:\\pedro apt-005.001\\cyberx-pro\\back end\\cyberx_pro\\cyberx_pro\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SetoresController.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\SetoresController.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\SetoresController.cs",
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ProdutosController.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ProdutosController.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ProdutosController.cs",
@@ -112,20 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Funcionarios.cs",
-              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
-              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Funcionarios.cs",
-              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
-              "RelativeToolTip": "CyberX_Pro\\Models\\Funcionarios.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T18:38:07.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "FuncionariosController.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\FuncionariosController.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\FuncionariosController.cs",
@@ -138,15 +125,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PedidosController.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\PedidosController.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\PedidosController.cs",
               "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\PedidosController.cs",
               "RelativeToolTip": "CyberX_Pro\\Controllers\\PedidosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T18:13:20.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Setores.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Setores.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Setores.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Setores.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Setores.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:33:40.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Funcionarios.cs",
+              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
+              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Funcionarios.cs",
+              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Funcionarios.cs",
+              "RelativeToolTip": "CyberX_Pro\\Models\\Funcionarios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T18:38:07.978Z",
               "EditorCaption": ""
             },
             {
@@ -163,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GerencialContext.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Data\\GerencialContext.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Data\\GerencialContext.cs",
@@ -176,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Pedidos.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Pedidos.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Pedidos.cs",
@@ -186,18 +199,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T18:35:36.397Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Setores.cs",
-              "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Setores.cs",
-              "RelativeDocumentMoniker": "CyberX_Pro\\Models\\Setores.cs",
-              "ToolTip": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Models\\Setores.cs",
-              "RelativeToolTip": "CyberX_Pro\\Models\\Setores.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T18:33:40.922Z"
             },
             {
               "$type": "Document",
@@ -237,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ClientesController.cs",
               "DocumentMoniker": "E:\\Pedro APT-005.001\\CyberX-Pro\\Back end\\CyberX_Pro\\CyberX_Pro\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "CyberX_Pro\\Controllers\\ClientesController.cs",
