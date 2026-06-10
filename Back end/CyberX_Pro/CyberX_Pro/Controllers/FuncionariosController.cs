@@ -15,6 +15,7 @@ namespace CyberX_Pro.Controllers
             _context = context;
         }
 
+        // POST: /Funcionarios — cadastra funcionário
         [HttpPost]
         public IActionResult CadastraFuncionarios(Funcionarios funcionarios)
         {
@@ -23,6 +24,15 @@ namespace CyberX_Pro.Controllers
             return Created("", funcionarios);
         }
 
+        // GET: /Funcionarios — retorna todos os funcionários (usado pela tabela)
+        [HttpGet]
+        public IActionResult RetornaTodosFuncionarios()
+        {
+            var funcionarios = _context.Funcionarios.ToList();
+            return Ok(funcionarios);
+        }
+
+        // GET: /Funcionarios/{id} — retorna um funcionário específico
         [HttpGet("{id}")]
         public IActionResult RetornaFuncionarios(int id)
         {
@@ -34,10 +44,11 @@ namespace CyberX_Pro.Controllers
             return Ok(funcionarios);
         }
 
+        // PUT: /Funcionarios/{id} — atualiza funcionário (bug corrigido: Find agora usa int id)
         [HttpPut("{id}")]
-        public IActionResult AtualizaFuncionario(Funcionarios funcionario)
+        public IActionResult AtualizaFuncionario(int id, Funcionarios funcionario)
         {
-            var funcionarioDoBanco = _context.Funcionarios.Find("IdFuncionario");
+            var funcionarioDoBanco = _context.Funcionarios.Find(id);
             if (funcionarioDoBanco == null)
             {
                 return NotFound("Funcionario não existe no banco!");
@@ -53,6 +64,7 @@ namespace CyberX_Pro.Controllers
             return Ok("Atualizado");
         }
 
+        // DELETE: /Funcionarios/{id} — remove funcionário
         [HttpDelete("{id}")]
         public IActionResult DeletaFuncionario(int id)
         {
@@ -66,26 +78,30 @@ namespace CyberX_Pro.Controllers
             return Ok("Deletado");
         }
 
+        // POST: /Funcionarios/login
         [HttpPost("login")]
         public IActionResult Login(Funcionarios funcionario)
         {
             var funcionarios = _context.Funcionarios
-                 .Where(f => f.Email.Equals(funcionario.Email) &&
-              f.Senha.Equals(funcionario.Senha)).ToList();
+                .Where(f => f.Email.Equals(funcionario.Email) &&
+                            f.Senha.Equals(funcionario.Senha))
+                .ToList();
+
             if (!funcionarios.Any())
             {
                 return Unauthorized("Usuário ou senha Inválidos!");
             }
+
             HttpContext.Session.SetString("IdFuncionarios", Convert.ToString(funcionarios[0].Id));
             Response.Cookies.Append("IdFuncionarios", funcionarios[0].Id.ToString(),
-           new CookieOptions
-           {
-               HttpOnly = true,
-               Secure = true,
-               SameSite = SameSiteMode.None
-           });
-            return Ok("login realizado com sucesso");
+                new CookieOptions
+                {
+                    HttpOnly = true,
+                    Secure = true,
+                    SameSite = SameSiteMode.None
+                });
 
+            return Ok("login realizado com sucesso");
         }
     }
 }

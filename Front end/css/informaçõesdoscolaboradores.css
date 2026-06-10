@@ -4,22 +4,22 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
-
+ 
 body {
     background: linear-gradient(135deg, #003f3f, #014d4d, #016666);
     color: white;
     min-height: 100vh;
 }
-
+ 
 header {
     text-align: center;
     padding: 40px 20px;
 }
-
+ 
 header h1 {
     margin-bottom: 10px;
 }
-
+ 
 .btn-cadastrar {
     margin-top: 20px;
     padding: 12px 20px;
@@ -31,11 +31,11 @@ header h1 {
     cursor: pointer;
     transition: 0.3s;
 }
-
+ 
 .btn-cadastrar:hover {
     background: #00d1c1;
 }
-
+ 
 .form-container {
     background: rgba(255,255,255,0.08);
     padding: 25px;
@@ -45,14 +45,14 @@ header h1 {
     flex-direction: column;
     gap: 12px;
 }
-
+ 
 .form-container input,
 .form-container select {
     padding: 10px;
     border-radius: 8px;
     border: none;
 }
-
+ 
 .btn-salvar {
     padding: 12px;
     border-radius: 10px;
@@ -62,18 +62,23 @@ header h1 {
     font-weight: bold;
     cursor: pointer;
 }
-
-.oculto {
-    display: none;
+ 
+.btn-salvar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
-
+ 
+.oculto {
+    display: none !important;
+}
+ 
 .funcoes-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     padding: 30px;
 }
-
+ 
 .funcao-btn {
     padding: 18px;
     border-radius: 12px;
@@ -84,24 +89,114 @@ header h1 {
     font-weight: bold;
     transition: 0.3s;
 }
-
+ 
 .funcao-btn:hover {
     background: #00b3a4;
     transform: translateY(-5px);
 }
-
+ 
+/* ── Container da tabela ──────────────────────────────── */
 .funcionarios-container {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    padding: 10px 40px 40px;
 }
-
-.funcionario-card {
-    background: rgba(255,255,255,0.07);
-    padding: 20px;
-    border-radius: 15px;
+ 
+/* ── Tabela ───────────────────────────────────────────── */
+.tabela-funcionarios {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    overflow: hidden;
 }
+ 
+.tabela-funcionarios thead {
+    background: rgba(0, 179, 164, 0.25);
+}
+ 
+.tabela-funcionarios thead th {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #a8faf4;
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(0,179,164,0.3);
+}
+ 
+.tabela-funcionarios tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    transition: background 0.15s;
+}
+ 
+.tabela-funcionarios tbody tr:hover {
+    background: rgba(0, 179, 164, 0.10);
+}
+ 
+.tabela-funcionarios tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    color: #d4f5f2;
+    white-space: nowrap;
+}
+ 
+.tabela-funcionarios tbody td:first-child {
+    color: rgba(168, 250, 244, 0.55);
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+ 
+/* ── Ações da tabela ──────────────────────────────────── */
+.acoes {
+    display: flex;
+    gap: 8px;
+}
+ 
+.btn-editar {
+    background: #f39c12;
+    border: none;
+    padding: 7px 13px;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+}
+ 
+.btn-editar:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+ 
+.btn-deletar {
+    background: #c0392b;
+    border: none;
+    padding: 7px 13px;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+}
+ 
+.btn-deletar:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+ 
+/* ── Estado vazio / carregando ────────────────────────── */
+.vazio {
+    text-align: center;
+    color: rgba(255,255,255,0.4);
+    padding: 50px 0;
+    font-size: 1rem;
+}
+ 
+/* ── Barra de pesquisa ────────────────────────────────── */
 .barra-pesquisa {
     margin-top: 15px;
     padding: 10px;
@@ -109,41 +204,8 @@ header h1 {
     border: none;
     width: 250px;
 }
-
-.preview-img {
-    width: 100px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.funcionario-card img {
-    width: 15%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.btn-editar {
-    background: #f39c12;
-    border: none;
-    padding: 8px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    margin-right: 5px;
-}
-
-.btn-excluir {
-    background: #c0392b;
-    border: none;
-    padding: 8px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-}
+ 
+/* ── Botão voltar ─────────────────────────────────────── */
 .btn-voltar {
     background: #a83232;
     border: none;
@@ -155,7 +217,48 @@ header h1 {
     margin-right: 10px;
     transition: 0.3s;
 }
-
+ 
 .btn-voltar:hover {
     background: #7a1f1f;
 }
+ 
+/* ── Cards legados (mantidos caso ainda sejam usados) ─── */
+.funcionario-card {
+    background: rgba(255,255,255,0.07);
+    padding: 20px;
+    border-radius: 15px;
+}
+ 
+.preview-img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+ 
+.funcionario-card img {
+    width: 15%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+ 
+/* ── Responsivo ───────────────────────────────────────── */
+@media (max-width: 700px) {
+    .funcionarios-container {
+        padding: 10px 12px 40px;
+    }
+ 
+    .tabela-funcionarios thead th,
+    .tabela-funcionarios tbody td {
+        padding: 10px 10px;
+        font-size: 0.82rem;
+    }
+ 
+    .barra-pesquisa {
+        width: 100%;
+    }
+}
+ 
